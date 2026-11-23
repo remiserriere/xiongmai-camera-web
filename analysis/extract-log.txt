@@ -1,0 +1,22 @@
+
+7-Zip 26.05 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+
+Scanning the drive for archives:
+1 file, 47126299 bytes (45 MiB)
+
+Extracting archive: VideoPlayToolSetup.exe
+--
+Path = VideoPlayToolSetup.exe
+Type = Nsis
+Physical Size = 47126299
+Method = LZMA:23
+Solid = -
+Headers Size = 63054
+Embedded Stub Size = 53760
+SubType = NSIS-3 Unicode
+
+Everything is Ok
+
+Files: 471
+Size:       162245216
+Compressed: 47126299

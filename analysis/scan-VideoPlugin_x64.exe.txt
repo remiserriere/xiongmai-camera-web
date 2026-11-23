@@ -1,0 +1,179 @@
+PE32+: true sections: 8
+  section .text vsize=1540485 rawsize=1540608 rawptr=1024
+  section .rdata vsize=472508 rawsize=472576 rawptr=1541632
+  section .data vsize=62480 rawsize=50688 rawptr=2014208
+  section .pdata vsize=156060 rawsize=156160 rawptr=2064896
+  section .gfids vsize=60 rawsize=512 rawptr=2221056
+  section .tls vsize=9 rawsize=512 rawptr=2221568
+  section .rsrc vsize=488 rawsize=512 rawptr=2222080
+  section .reloc vsize=5052 rawsize=5120 rawptr=2222592
+end of sections: 2227712 file size: 2227712 overlay bytes: 0
+sig NSIS: none
+sig Inno: none
+sig InnoLdr: none
+sig 7z: none
+sig ZIP: none
+sig MSI_CFB: none
+sig CAB: none
+sig WiXBurn: none
+sig MZ_embedded: 78
+--- interesting strings (159) ---
+1x ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+1x %1@VideoPlayTool
+1x VideoPlayToolVersion.ini
+1x https://ocx.jftechws.com:443/ocx/
+1x VideoPlayToolSetup
+1x videoplaytoolupdatelog
+1x https://ocx.jftechws.com:443/web/
+1x H264_DVR_StartVoiceCom_NVR_IPC error=%1
+1x H264_DVR_OpenSound %1
+1x H264_DVR_GetDevConfig=%1
+1x H264_DVR_StartVoiceCom_MR failed Error = %1
+1x H264_DVR_OpenSound failed Error = %1
+1x ffmpeg.exe
+1x H264_DVR_StartLocalPlay m_lPlayHandle=%1
+1x H264_DVR_StartLocalPlay Error=%1
+1x H264_DVR_OpenSound bResult: %1 m_nPort: %2
+1x H264_DVR_CloseSound bRet: %1 m_nPort: %2
+1x H264_DVR_StartLocalRecord. m_lPlayHandle: %1, fileName:%2, bRet: %3
+1x H264_DVR_StopPlayBack m_lPlayHandle=%1 Res=%2
+1x sendWebSocketMsgSig
+1x onRecvWebsocketMsg
+2x kernel32.dll
+1x jftech
+3x https://
+2x LoginType
+4x CPluginManage::onMainMsgLogin
+1x H264_DVR_GetDevConfig_JsonV2_EX [OPLocalSerach] faild. Protocol: JIUAN. lRet: %2
+2x CPluginManage::onRecvWebsocketMsg
+4x /Browse.exe
+1x Device Disconnect IP=%1 LoginID=%2 Port=%3
+1x CPluginManage::loginDev
+1x loginDev----------devType:%1
+1x LoginFailed
+1x CPluginManage::sendWebSocketMsg
+1x CPluginManage::onMainMsgLogin::<lambda_13e1623e022152f3e162588dcbb093da>::operator ()
+1x VideoPlayToolUpdateLog
+1x H264_DVR_GetChannelAbility_Json Name:%1 Ret:%2
+1x Import Config by H264_DVR_SetDevConfig
+1x fileszie = %1<===============>H264_DVR_SetDevConfig error=%2
+1x H264_DVR_SetDevConfig pBuf size > 64k
+9x CXMConnect::InitNetSDK
+2x H264_DVR_SendFileDataToDevice error=%d
+1x H264_DVR_Init begin. WebStyle: %1
+1x H264_DVR_Init end lResult:%1
+1x H264_DVR_UserData end ServerIP:%1, Result:%2
+1x H264_DVR_UserData end type:%1, UserData:%2, nlen:%3
+1x InitNetSDK nSpecial=%1, g_nOemCustom=%2
+1x H264_DVR_InitAppInfo begin. Start TimeStamp: %1 > Timeout: %2
+1x H264_DVR_InitAppInfo end. End TimeStamp: %1 > lResult: %2
+1x H264_DVR_LoginEx_V2 SN=%1 Token=%2
+1x SearilID Login. szSN: %1, szUserName: %2, pwd: %3, nError: %4, nRet: %5, pwdHead: %6
+1x ConnectDevice success,LoginID=%1
+1x Disconnect Device LoginID=%1
+1x H264_DVR_RealPlay lPlayHandle=%1 > SetRealDataCallBack bRet=%2 > MakeKeyFrame bRet1=%3
+2x H264_DVR_RealPlay error=%1
+1x H264_DVR_StopRealPlay lPlay=%1 bRes=%2
+1x H264_DVR_RealPlay lPlayHandle=%1 > SetRealDataCallBackV2 bRet=%2 > MakeKeyFrame bRet1=%3
+1x H264_DVR_DelRealDataCallBack_V2 begin lPlay=%1
+1x H264_DVR_DelRealDataCallBack_V2 end lPlay=%1 bRes=%2
+1x H264_DVR_StopRealPlay lPlay=%1 end bRes=%2
+1x H264_DVR_PlayBackByTimeEx lLogin=%1 nError=%2
+1x H264_DVR_PlayBackByTimeEx lLogin=%1 lPlay=%2
+1x H264_DVR_PlayBackByName lLogin=%1 nError=%2
+1x H264_DVR_PlayBackByName lLogin=%1 lPlay=%2
+1x H264_DVR_StopPlayBack lPlay=%1
+2x H264_DVR_StopPlayBack lPlay=%1 bResult=%2
+1x H264_DVR_GetChannelAbility_Json
+1x H264_DVR_GetSystemAbility
+1x H264_DVR_GetLastError
+1x H264_DVR_GetDevConfig
+1x H264_DVR_StartVoiceCom_MR
+1x H264_DVR_StartVoiceCom_NVR_IPC
+1x H264_DVR_VoiceComSendData
+1x H264_DVR_StopVoiceCom
+1x H264_DVR_OpenSound
+1x H264_DVR_CloseSound
+1x H264_DVR_StartCaptureAudio
+1x H264_DVR_StopAudioCapture
+1x H264_DVR_SetDrawOrigin
+1x H264_DVR_StopPlayBack
+1x H264_DVR_PlayBackControl
+1x H264_DVR_GetPlayHandle
+1x H264_DVR_LocalCatchPic
+1x H264_DVR_StartLocalRecord
+1x H264_DVR_StopLocalRecord
+1x H264_DVR_LocalGetColor
+1x H264_DVR_LocalSetColor
+1x H264_DVR_DrawOsd
+1x H264_DVR_GetPictureSize
+1x H264_DVR_GetCurTimeStamp
+1x H264_DVR_GetDevConfig_JsonV2_EX
+1x H264_DVR_DevStartListen
+1x H264_DVR_DevStopListen
+1x H264_DVR_Init
+1x H264_DVR_InitAppInfo
+1x H264_DVR_SetEncrypt
+1x H264_DVR_Cleanup
+1x H264_DVR_LoginEx_V2
+1x H264_DVR_LoginEx_V3
+1x H264_DVR_Logout
+1x H264_DVR_SetDVRMessCallBack
+1x H264_DVR_SetupAlarmChan
+1x H264_DVR_CloseAlarmChan
+1x H264_DVR_SetDevConfig
+1x H264_DVR_RealPlay
+1x H264_DVR_StopRealPlay
+1x H264_DVR_SetRealDataCallBack
+1x H264_DVR_SetRealDataCallBack_V2
+1x H264_DVR_DelRealDataCallBack
+1x H264_DVR_DelRealDataCallBack_V2
+1x H264_DVR_PlayBackByName
+1x H264_DVR_PlayBackByTimeEx
+1x H264_DVR_GetFileByName
+1x H264_DVR_StopGetFile
+1x H264_DVR_Upgrade
+1x H264_DVR_GetUpgradeState
+1x H264_DVR_CloseUpgradeHandle
+1x H264_DVR_MakeKeyFrame
+1x H264_DVR_SetDisableHardDecode
+1x H264_DVR_SetOverlayMode
+1x H264_DVR_AdjustFluency
+1x H264_DVR_UserData
+1x H264_DVR_Upgrade_Cloud
+1x H264_DVR_SearchCalendar
+1x H264_DVR_GetDevConfig_JsonV2
+1x H264_DVR_SetDevConfig_JsonV2
+1x H264_DVR_SetDevConfig_JsonV2_EX
+1x H264_DVR_SendFileDataToDevice
+1x NetSDK.dll
+1x XNetSDK.dll
+1x Qt5Core.dll
+1x Qt5Gui.dll
+1x Qt5Network.dll
+1x Qt5Widgets.dll
+1x KERNEL32.dll
+1x USER32.dll
+1x GDI32.dll
+1x MSVCP140.dll
+1x StreamReader.dll
+1x avformat.dll
+1x avutil.dll
+1x avcodec.dll
+1x dbghelp.dll
+1x pdh.dll
+1x WINMM.dll
+1x VCRUNTIME140.dll
+1x api-ms-win-crt-math-l1-1-0.dll
+1x api-ms-win-crt-heap-l1-1-0.dll
+1x api-ms-win-crt-stdio-l1-1-0.dll
+1x api-ms-win-crt-string-l1-1-0.dll
+1x api-ms-win-crt-runtime-l1-1-0.dll
+1x api-ms-win-crt-filesystem-l1-1-0.dll
+1x api-ms-win-crt-utility-l1-1-0.dll
+1x api-ms-win-crt-time-l1-1-0.dll
+1x api-ms-win-crt-environment-l1-1-0.dll
+1x api-ms-win-crt-locale-l1-1-0.dll
+1x SHELL32.dll
+1x FAAC - Freeware Advanced Audio Coder (http://www.audiocoding.com/)
+1x [u16] kernel32.dll

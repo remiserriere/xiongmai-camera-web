@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="app.title">Xiongmai Camera Web</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <h1 data-i18n="app.title">Xiongmai Camera Web</h1>
+      <span id="connBadge" class="badge off" data-i18n="badge.off">Déconnecté</span>
+      <label class="lang-picker">
+        <span data-i18n="lang.label">Langue</span>
+        <select id="langSelect">
+          <option value="fr">Français</option>
+          <option value="en">English</option>
+        </select>
+      </label>
+    </header>
+
+    <nav id="mainTabs" class="tabs main-tabs"></nav>
+    <main id="mainPanes"></main>
+
+    <footer id="statusLine" class="status" data-i18n="status.ready">Prêt.</footer>
+
+    <template id="tplConnection">
+      <div class="card">
+        <form id="connForm" class="conn-form">
+          <label><span data-i18n="conn.host">Adresse IP</span> <input name="host" type="text" required placeholder="192.0.2.10" /></label>
+          <label><span data-i18n="conn.port">Port HTTP</span> <input name="port" type="number" min="1" max="65535" value="80" /></label>
+          <label><span data-i18n="conn.user">Utilisateur</span> <input name="user" type="text" value="admin" autocomplete="username" /></label>
+          <label><span data-i18n="conn.password">Mot de passe</span> <input name="password" type="password" data-i18n-placeholder="conn.passwordPh" autocomplete="current-password" /></label>
+          <div class="actions">
+            <button type="submit" class="primary" data-i18n="conn.submit">Se connecter et charger la configuration</button>
+            <button type="button" id="disconnectBtn" data-i18n="conn.disconnect">Déconnecter</button>
+          </div>
+        </form>
+        <div id="devInfo" class="dev-info"></div>
+      </div>
+    </template>
+
+    <template id="tplLive">
+      <div class="live">
+        <div class="card video-card">
+          <div class="actions">
+            <select id="streamQuality">
+              <option value="sub" data-i18n="live.sub">Sous-flux (léger)</option>
+              <option value="main" data-i18n="live.main">Flux principal (pleine résolution, lourd)</option>
+            </select>
+            <button id="startBtn" type="button" class="primary" data-i18n="live.start">Démarrer</button>
+            <button id="stopBtn" type="button" data-i18n="live.stop">Arrêter</button>
+            <button id="snapBtn" type="button" data-i18n="live.snap">Capture</button>
+            <a id="snapLink" class="hidden" download="capture.jpg" data-i18n="live.download">Télécharger la capture</a>
+          </div>
+          <canvas id="videoCanvas" width="800" height="448"></canvas>
+          <img id="snapImg" class="hidden" alt="" />
+        </div>
+        <div class="card ptz-card">
+          <h3 data-i18n="ptz.title">PTZ</h3>
+          <div class="ptz-grid">
+            <button data-ptz="DirectionLeftUp" type="button">&#8598;</button>
+            <button data-ptz="DirectionUp" type="button">&#8593;</button>
+            <button data-ptz="DirectionRightUp" type="button">&#8599;</button>
+            <button data-ptz="DirectionLeft" type="button">&#8592;</button>
+            <span></span>
+            <button data-ptz="DirectionRight" type="button">&#8594;</button>
+            <button data-ptz="DirectionLeftDown" type="button">&#8601;</button>
+            <button data-ptz="DirectionDown" type="button">&#8595;</button>
+            <button data-ptz="DirectionRightDown" type="button">&#8600;</button>
+          </div>
+          <div class="ptz-row">
+            <button data-ptz="ZoomTile" type="button" data-i18n="ptz.zoomIn">Zoom +</button>
+            <button data-ptz="ZoomWide" type="button" data-i18n="ptz.zoomOut">Zoom −</button>
+          </div>
+          <div class="ptz-row">
+            <button data-ptz="FocusNear" type="button" data-i18n="ptz.focusNear">Mise au point +</button>
+            <button data-ptz="FocusFar" type="button" data-i18n="ptz.focusFar">Mise au point −</button>
+          </div>
+          <label><span data-i18n="ptz.speed">Vitesse</span> <input id="ptzStep" type="range" min="1" max="8" value="5" /></label>
+          <div class="ptz-row">
+            <input id="presetNum" type="number" min="1" max="255" value="1" />
+            <button id="presetGoto" type="button" data-i18n="ptz.goto">Aller</button>
+            <button id="presetSet" type="button" data-i18n="ptz.set">Mémoriser</button>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <script src="/vendor/jsmpeg.min.js"></script>
+    <script src="/i18n.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>

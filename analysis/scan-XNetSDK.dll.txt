@@ -1,0 +1,503 @@
+PE32+: true sections: 7
+  section .text vsize=21844926 rawsize=21844992 rawptr=1024
+  section .rdata vsize=6658440 rawsize=6658560 rawptr=21846016
+  section .data vsize=20377664 rawsize=122368 rawptr=28504576
+  section .pdata vsize=677472 rawsize=677888 rawptr=28626944
+  section _RDATA vsize=48 rawsize=512 rawptr=29304832
+  section .rsrc vsize=480 rawsize=512 rawptr=29305344
+  section .reloc vsize=157956 rawsize=158208 rawptr=29305856
+end of sections: 29464064 file size: 29464064 overlay bytes: 0
+sig NSIS: none
+sig Inno: none
+sig InnoLdr: none
+sig 7z: none
+sig ZIP: 4842692
+sig MSI_CFB: none
+sig CAB: none
+sig WiXBurn: none
+sig MZ_embedded: 78
+--- interesting strings (484) ---
+1x LoginingH
+1x  !"#$%&'()*+,-./012345678vv9:;<=>?@ABCDvEFGHIJKLMNOPQRSTUVWXYZ[\]^_vvvvvvvv`avvvvvvvvvvvvvvbcdefghivvvvvvvvvvvvvvvvvvjklmnopvvvvvvvvvvvvvvvvvvvvvvvvvvqrstvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvu
+1x 1KK234567K
+1x ams.jftechws.com
+1x api.jftechws.com
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\ChnAvTalk.cpp
+6x 0123456789ABCDEF
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\ChnPushAIInfo.cpp
+1x pub-token.xmeye.net
+1x sdk-gateway.jftechws.com
+1x sdk-gateway.jftechws.com/statv2
+1x rs.jftechws.com
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\ChnRealStream.cpp
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\ChnRecordStream.cpp
+2x 0123456789abcdef
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\ChnTalk.cpp
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\ChnTransCom.cpp
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\DataCenter.cpp
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\DevProtocol\ProtocolNetIP.cpp
+1x XSDK_LIB::CProtocolNetIP::NewLoginPTL
+1x NewLoginPTL, username: {}, sn: {}
+1x DVRIP-Mobile
+1x LoginType
+1x NewLoginPTL: {}
+1x XSDK_LIB::CProtocolNetIP::DecLoginToken
+1x CProtocolNetIP::DecLoginToken   nRet[%d], szToken[%s]
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\DevSearcher.cpp
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\DevUpgrade\DevUpgradeChecker.cpp
+1x upgrade.jftechws.com
+1x https://{}:{}/{}
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\DevUpgrade\DevUpgradeCloudV2.cpp
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\DevUpgrade\DevUpgradeDownloader.cpp
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\DevUpgrade\DevUpgradeFromFile.cpp
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\DevUpgrade\DevVerifyProcess.cpp
+1x CDevVerifyProcess::onLogin
+1x OnMsg, dev login success
+1x dev login failed
+1x CDevVerifyProcess::SendLoginReq
+1x send login request
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\DevUploadData.cpp
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\DevicePtlListen.cpp
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\DownloadFileTrans.cpp
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\DownloadTaskManager.cpp
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\MediaDss.cpp
+1x http://%[^:]:%d
+1x https://%[^:]:%d
+1x {"sn":"%s","user":"%s","pass":"%s","service":"%s","uuid":"%s","appkey":"%s","tm":"%s","sign":"%s"}
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\MediaRecvServer\MediaRecvManager.cpp
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\MediaRecvServer\XMIOTChannel.cpp
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\MediaReqClient\MediaGwm.cpp
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\MediaReqClient\ProtocolGwm..cpp
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\MediaReqClient\XMGwmClient.cpp
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\NetConnect\XMRPSClient.cpp
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\NetConnect\XMTSClient.cpp
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\NetConnect\XMTSPtlParser.cpp
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\NetConnect\xm_ble_client.cpp
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\NetConnectDevice.cpp
+1x Logined
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\NetDevice.cpp
+1x DeviceLogin
+1x DeviceLogin:{}, {} disconnect :{}
+1x XSDK_LIB::CNetDevice::OnLoginResult
+1x OnLoginResult
+1x DeviceLogin:{}, {} login failed , {} : {}
+1x login_error_retry
+1x LoginUserId
+1x LoginEncryptionType
+1x Login_Begin
+1x SendLoginPtl_Begin
+1x DeviceLogin:{}, to connect:{}
+1x XSDK_LIB::CNetDevice::PushWaitForDeviceLogin
+1x operation {} need wait for login, timeout: {} ms
+1x NetDevice relogin, handle: {}, sender: {}, param2: {}
+1x UserLogin_End
+1x XSDK_LIB::CNetDevice::OnLoginError_SetConnectTime
+1x login error count: {}, next time, after {} s
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\RecordThumbnail.cpp
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\SendFileToDev.cpp
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\SubChannel.cpp
+1x xnetsdk_version_v1.3.38_NetSDK_b1509231295f6fdbe76deca088fcef53482e47c3_root_2026-06-01 02:07:33
+1x netsdk
+1x XNetSDK
+1x xnetsdk
+1x v1.3.38_NetSDK
+2x XSDK_DevLogin
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\XNetSDK.cpp
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\XNetSDKLib.cpp
+1x XNetSDK_Lib_Init
+1x XNetSDK init version: {}, compileTime: {}
+1x XSDK_Lib_DevLogin2::<lambda_cecb830ee6e7a662ee430dcce31fbcfa>::operator ()
+1x prepare to login, ip: {}, port: {}, username: {}
+1x XSDK_Lib_DevLogin2
+1x XSDK_Lib_DevLogout[LoginId: {}]
+2x XSDK_DevLoginSyn
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\XNetSDKSyn.cpp
+1x devId: {} port: {} login start.timeout: {}
+1x devId: {} port: {} login end.result: {}, handle: {}
+1x GetAppServiceRight timeout;%d, result:%d
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\device_info.cpp
+1x DeviceInfoManager::getAuthKey
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\device_v2\ble_device.cpp
+1x handshake failed, no authkey or cryKey
+1x BleDevice::onPrelogin
+1x authkey
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\device_v2\ble_upgrade\ble_upgrade.cpp
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\src\XNetSDK\device_v2\ble_upgrade\ble_upgrade_strategy.cpp
+1x Logining
+1x Registering/Logining
+1x Registered/Logined
+1x onPreloginResult1 {}
+1x BTKit::onPreloginResult1
+1x onPrelogin[{}]: {}
+1x BTKit::BluetoothTransferBase::onPrelogin
+1x BTKit::SubClient::prelogin
+1x wxyzABCDEFGHIJKL0123456789abcdefghijklmnopqrstuv
+1x XDevState::GetStateForLogin::<lambda_9f7819667dde943d15c0ffa506a5db35>::operator ()
+1x XDevState::GetStateForLogin
+1x query access method for login.device id is ip {} online.
+1x query access method({}) for login, {}
+1x ThirdPartyLoginType
+1x CXAccountCloud::OnLoginResult
+1x CXAccountCloud::ToLogin
+1x Start-ToLogin
+1x OnHttpResult UserLogin
+1x UserLogin:%s
+1x loginExist
+1x xaccount_version_v1.3.38_NetSDK_b1509231295f6fdbe76deca088fcef53482e47c3_root_2026-06-01 02:07:33
+1x xagentclient_version_v1.3.38_NetSDK_b1509231295f6fdbe76deca088fcef53482e47c3_sub_2026-06-01 02:07:33
+1x ServiceType
+1x JFTECH-EV
+1x JFTECH-REQ
+1x JFTECH-TIME
+4x ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+1x xplaysdk_version_v1.3.38_NetSDK_b1509231295f6fdbe76deca088fcef53482e47c3_sub_2026-06-01 02:07:33
+1x rtsp://
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\build\_deps\xrtspserver-src\src\RTMPClient\RtmpClient.cpp
+1x xrtspserver_version_v1.3.38_NetSDK_b1509231295f6fdbe76deca088fcef53482e47c3_sub_2026-06-01 02:07:33
+1x rtsp://%[^:]:%d/
+1x rtsp://%[^/]/
+1x CXRtspClient
+1x CXRtspClient::CXRtspClient
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\build\_deps\xrtspserver-src\src\XRtspClient.cpp
+1x CXRtspClient::~CXRtspClient
+1x CXRtspClient::OnConnect
+1x CXRtspClient::OnDisConnect
+1x CXRtspClient::OnReConnect
+1x CXRtspClient::OnMsgResult
+1x CXRtspClient::OnRtspParserError
+1x OnRtspParserError
+1x CXRtspClient::OnRtspProtocol
+1x OnRtspProtocol
+1x CXRtspClient::OnNetHeartBeat
+1x recv rtsp media data time out
+1x CXRtspClient::OnMsg
+1x CXRtspClient::OnState
+1x CXStdRtspClient::OnRtspParserError
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\build\_deps\xrtspserver-src\src\XStdRtspClient.cpp
+1x OnRtspParserError[%d,%d]
+1x onvif-replay
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\build\_deps\xrtspserver-src\src\XHLSClient.cpp
+1x http://%[^:]:%d/%s
+1x http://%[^/]/%s
+1x https://%[^:]:%d/%s
+1x https://%[^/]/%s
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\build\_deps\xrtspserver-src\src\FFmpegClient.cpp
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\build\_deps\xrtspserver-src\src\RTMPClient\RtmpSession.cpp
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\build\_deps\xrtspserver-src\src\RTMPClient\RtmpMediaHandle.cpp
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\build\_deps\xrtspserver-src\src\RTMPClient\RtmpPack.cpp
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\build\_deps\xrtspserver-src\src\RTMPClient\RtmpParse.cpp
+1x wss://
+1x Posting websocket handshake for client %s rc %d
+1x http://
+1x https://
+1x WebSocket_buildFrame
+1x C:\gitlab-runner\builds\fsSrJJLzb\0\sdk\ThirdParty\mqtt\src\WebSocket.c
+1x Data too large for websocket frame
+1x WebSocket_unmaskData
+1x WebSocket_connect
+1x Upgrade: websocket
+1x Sec-WebSocket-Key: %s
+1x Sec-WebSocket-Version: 13
+1x Sec-WebSocket-Protocol: mqtt
+1x WebSocket_close
+1x WebSocket_getch
+1x WebSocket_getdata
+1x WebSocket_getRawSocketData
+1x WebSocket_pong
+1x Sending WebSocket PONG
+1x WebSocket_putdatas
+1x WebSocket_receiveFrame
+1x WebSocket_terminate
+1x WebSocket_upgrade
+1x WebSocket upgrade read not complete %lu
+1x WebSocket HTTP rc %.3s
+1x WebSocket HTTP upgrade response read not complete %lu
+1x sec-websocket-accept
+1x WebSocket connection upgraded
+1x WebSocket failed to upgrade connection
+1x xinput1_4.dll
+1x xinput1_3.dll
+1x xinput9_1_0.dll
+1x xinput1_2.dll
+1x xinput1_1.dll
+1x ntdll.dll
+1x user32.dll
+1x shcore.dll
+1x d3d12.dll
+1x CBuleToothDistribute::onPrelogin
+1x AuthKey
+1x WifiSsid:%s, WifiPwd:%s, WifiEncryptType:%d, AuthKey:%s, 4G_APN:%s
+1x 127.0.0.1
+1x xmediacodec_version_v1.3.38_NetSDK_b1509231295f6fdbe76deca088fcef53482e47c3_sub_2026-06-01 02:07:33
+1x xp2p_version_v1.3.38_NetSDK_b1509231295f6fdbe76deca088fcef53482e47c3_sub_2026-06-01 02:07:33
+1x sns[{}] query failed because the DNS resolution service for P2P did not obtain the P2P service
+1x 1234567890ab
+1x bcloud365_version_v1.3.38_NetSDK_b1509231295f6fdbe76deca088fcef53482e47c3_sub_2026-06-01 02:07:33
+1x ams-xcloudsdk.jftechws.com
+1x xprotocol_version_v1.3.38_NetSDK_b1509231295f6fdbe76deca088fcef53482e47c3_sub_2026-06-01 02:07:33
+1x CFrameLog::FrameLogInput
+1x RTSP/1.
+1x RTSP/1.0
+1x D:\gitlab-runner\builds\t2_1SfNUy\0\client-sdk\XCloudSDK\build\_deps\xprotocol-src\src\RTSP\RTPPacket.cpp
+1x audio service type: 
+1x Main Audio Service
+1x AUDIO_SERVICE_TYPE
+1x <Mpeg7 xmlns="urn:mpeg:mpeg7:schema:2001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mpeg:mpeg7:schema:2001 schema/Mpeg7-2001.xsd">
+1x Failed loading user32.dll
+1x 0123456789ABCDEF0123456789abcdefNTP time format roll over detected
+1x abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+-.
+1x http://www.w3.org/ns/ttml
+1x <smil xmlns="http://www.w3.org/2001/SMIL20/Language">
+1x <EssentialProperty id="%d" schemeIdUri="http://dashif.org/guidelines/trickmode" value="%d"/>
+1x <MPD xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+1x xmlns:xlink="http://www.w3.org/1999/xlink"
+1x xsi:schemaLocation="urn:mpeg:DASH:schema:MPD:2011 http://standards.iso.org/ittf/PubliclyAvailableStandards/MPEG-DASH_schema_files/DASH-MPD.xsd"
+1x <ServiceDescription id="0">
+1x </ServiceDescription>
+1x hca_highkey
+1x <manifest xmlns="http://ns.adobe.com/f4m/1.0">
+1x SERVICE
+1x Invalid instream ID SERVICE index %d in %s, range 1-63 
+1x Invalid instream ID %s, supported are CCn or SERVICEn
+1x service_name
+1x service_provider
+1x mpegts_service_id
+1x Set service_id field.
+1x mpegts_service_type
+1x Set service_type field.
+1x HEVC Digital Television Service.
+1x Service
+1x Too long service or provider name
+1x service %i using PCR in pid=%i, pcr_period=%lldms
+1x Nullsoft Streaming Video
+1x Service Unavailable
+1x RTSP Version not Supported
+1x rtsp_transport
+1x set RTSP transport protocols
+1x rtsp_flags
+1x set RTSP flags
+1x RTSP/1.0 200 OK
+1x RTSP/1.0 501 Not Implemented
+1x %s %s RTSP/1.0
+1x Tunneling of RTSP requests with content data
+1x Accept: application/x-rtsp-tunnelled
+1x Content-Type: application/x-rtsp-tunnelled
+1x RTSP Version not supported
+1x RTSP demuxer
+1x RTSP input
+1x RTSP/1.0 %d %s
+1x RTSP: Unexpected Command
+1x Unable to open RTSP for listening
+1x rtsps:
+1x RTSP muxer
+1x RTSP output
+1x   xmlns="http://www.w3.org/ns/ttml"
+1x   xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+1x   xmlns:tts="http://www.w3.org/ns/ttml#styling"
+1x   xmlns:ttp="http://www.w3.org/ns/ttml#parameter"
+1x   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+1x password for anonymous login. E-mail address should be used.
+1x user for FTP login. Overridden by whatever is in the URL.
+1x password for FTP login. Overridden by whatever is in the URL.
+1x No nested protocol specified. Specify e.g. hls+http://%s
+1x The server does not support MMST (try MMSH or RTSP)
+1x The gateway URL didn't start with http:// or https:// and is therefore invalid.
+1x <tt xml:lang="" xmlns="http://www.w3.org/ns/ttml" />
+1x Failed to fix invalid RTSP-MS/ASF min_pktsize
+1x If you want to help, upload a sample of this file to https://streams.videolan.org/upload/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+1x Audio service type
+1x 0123456789ABCDEFabcdef
+1x nvcuda.dll
+2x d3d11.dll
+1x dxgi.dll
+1x dxgidebug.dll
+1x Failed to create the video service
+2x d3d9.dll
+1x dxva2.dll
+1x  !"#$%&'()*+,-./0123456789:;<=>?@AEGHIKLMNOPQTXYZ[\]`acdefghijk
+1x  #$%&()+,-./0123456789:;<=>?@ABCDEHIKMOPQRSTUXZ^_`adefghiklmnop
+1x  !#$%&'(*+,./02345678;<=?@ABCDFGHIJKLMNOPQRSTUVWXYZ[\]^_`cdfg
+1x  !"&(*+,./0123456789:;<=>?@ABCDEFGHIJKNOQRSUVWXYZ[^`bcdefgkmnst
+1x "&'()*+-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcgijmpqrs
+1x  !"#$%'()+,-/0123456789<=>?@ACDEGHIJKLMNOPQRSTUVWXYZ[\]`acdgiklmprtvxy
+1x !"#$%&()*+,-./0123456789:<=>?@ABDEFGHIJKLMNOPQRSTUVWYZ[\]^`abdef
+1x  !"#$%&'()*+,-./0123456789:=>@ABDEFGHILMNOQRSTUVWXYZ[\]^_`a
+1x  "#$&'(*+,-./03456789:;<>?@BCDFGHIJKLOQSTUVWX[\^_`bcdefghkpqrwxz{
+1x  !"#$%&')+,-./0123456789:;<=>?@ABCDEFGHIJKLOPRSTVWXYZ[\_cdefgklnop
+1x  !"#$%&()*+,-.0123456789:;<=>?@ABCDEFGHIJMNPQRTUVWXYZ\]_abcdef
+1x #$%&'(+,./023456789:;?ABCDFGHIJKLMNOPQRSTUVWXYZ[\]^_`cfghjlmnopsuwxyz
+1x  !"#$%&'()*+,-./0123456789;<=?@ACDEFGHIJLNPQRSTUWXY[\]_`abcde
+1x  "#$&)*+-./12345678:<=>?@ABCEFGHIJKLMNOPQRSTUVWXYZ[\]^_abcefgijklmnopq
+1x  !"#$%'()*+,-/0123456789:;<=>?@ACDEFGHILMOPQSTUVWXY\]^_`abcdegh
+1x  "#$&'()*+,/013456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_
+1x  !"#$%&'()*+,./0123456789:;<=>?@ACDEFGHKLNOPRSTUVWXZ[]_`ab
+1x  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUWXY
+1x !"#$%&'*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNORSUVWYZ[\]^_bdf
+1x !#$%&'()*+,-./0123456789:;<=>?@ABCDGHJKNOPQRSWY[\]^`cfghjklmnopstwx
+1x  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEGHIJKLMNOPQRSTUVWXYZ[\]`
+1x  !"#$%&'()*+,-./0123456789:;<=>@ABCDEHIKLMOQRSTXYZ[\]^_`acd
+1x  !#$%&'()*+,-./0123456789:;<=@ACDEGIJKLMPRVWX\]^_`acdefghijlnpqrA
+1x  !"#$%&'()*+,-./0123456789@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+1x  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abc
+9x  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+1x  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFG
+1x  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxy
+1x  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]
+1x  !"#$%&'()*+,-./0123456789:;<=>?@A
+1x  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrs
+1x  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVW
+1x  !"#$%&'()*+,-./0123456789:;~
+1x  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklm
+1x  !"#$%&'./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+1x  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQ
+1x  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefg
+1x  !()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+1x  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJK
+1x  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}
+1x  !"#$%&'()*+,-./01234567>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+1x  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`a
+1x  !"#$%&'()*+,-./0123456789:;<=>?@ABCDE
+1x  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvw
+1x  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[
+2x  !"#$%&'()*+,-./0123456789:;<=>?
+2x "&'()*+-./012345678
+3x  !"#$%&'()*+,-./0123456789@ABCDEFGHIJK
+3x  !()*+,-./0123456789:;<=>?@ABCDEFG
+2x  !"#$%&'()*+,-./0123456789:;<=
+2x  !"#$%&'()*+,-./0123456789
+2x  !"#$%&'()0123456789:;<=>?@ABCDEFGHIJK
+2x  !"#$%,-./0123456789:;<=>?@ABCDEFGHIJK
+1x dsound.dll
+1x Failed to load dsound.dll
+1x GetConfigValue
+1x 0123456789abcdefSignature: 8a477f597d28d172789f06886806bc55
+1x #       http://www.brynosaurus.com/cachedir/
+1x kernel32.dll
+1x shfolder.dll
+1x '()*+,-./0123456789:;
+1x http://www.w3.org/XML/1998/namespace
+1x http://www.w3.org/2000/xmlns/
+1x  !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz{\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+1x file://localhost/
+1x libxml2.dll
+1x %s http://%s:%d%s
+1x %s http://%s%s
+1x http://www.w3.org/2001/XMLSchema
+1x http://relaxng.org/ns/structure/1.0
+1x http://www.w3.org/2001/XMLSchema-instance
+1x  !""#$%&'"""()*+,-./0123456789:;<=>?@@ABCDEFGEHIEE@J@@KLMNOPQRESTUVWXYEE"""""""""""""""""""""""""""""""""""Z""""[""""""""\""]^_`abcdefgh"""""""""""""""""""""""ijjjjjjjjjjjjjjjjkkkkkkkkkkkkkkkkkk""lmno""pqrstuvwxyz{|}~
+2x 0123456789
+1x !"$%&'()*+0123456789<=>?ABCDEILMNORSTVYZ[]^_`abcdefghijklmnopqrstuvwxyz{|}~
+1x  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_
+1x "#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRS
+1x $@0123456789.EE?-?
+1x cmd.exe /c 
+1x XLogInit
+1x  !"#$%&'()*+,-./0123@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+1x EE_USER_HAS_LOGIN
+1x 0123456789abcdefghijklmnopqrstuvwxyABCDEFGHIJKLMNOPQRSTUVWXY
+1x _OPENSSL_isservice
+1x directory services (X.500)
+1x dhKeyAgreement
+1x serviceLocator
+1x OCSP Service Locator
+1x directory services - algorithms
+1x msSmartcardLogin
+1x Microsoft Smartcard Login
+1x 0123456789.
+1x 0123456789.:abcdefABCDEF
+1x ambiguous host or service
+1x malformed host or service
+1x no accept addr or service specified
+1x no hostname or service specified
+1x localhost/
+1x 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz./
+1x $%&'()*+,-./0123456789:;<=
+1x OCSP_SERVICELOC
+1x %s.dll
+1x value.shkeybag
+1x audio_service_type
+1x audio service type
+1x Winnov WNV1
+1x innoHeim/Rsupport Screen Capture Codec
+1x  !"#$%%&'()*+,-../0123456789:;<=>?@ABCDEFGHIJKLLMNOPQRSTUVWXY[]_`bdefhjlnprtvz|~
+1x  "#$%&'()*+,-/0123456789:<=>?@ABCDEFGIJKLMNOPQRSTVWXYZ[\]^_`acdefghijklmnpqrstuvwxyz{}~
+1x nvcuvid.dll
+1x  !"#$%&'()*+,-./0123456789:;;<=>>?@@AABBCCCDDDEEEE
+1x  !"#$%&'()*+,-./0123456789:;<=>?@AABCDDEFFGGHHIIIJJJKKKK
+1x  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}|}~
+1x nvEncodeAPI64.dll
+1x Failed to create IDirectXVideoDecoderService
+1x a_v.s01234567 = (d_v - pr0).s04152637;
+1x a_v.s01234567 = (d_v - pr1).s04152637;
+1x a_v.s01234567 = (d_v - pr2).s04152637;
+1x a_v.s01234567 = (d_v - pr3).s04152637;
+1x p{d7*x264 - core %d%s - H.264/MPEG-4 AVC codec - Copy%s 2003-2022 - http://www.videolan.org/x264.html - options: %s
+1x libx265.dll
+1x libx265_main12.dll
+1x libx265_main10.dll
+1x x265 (build %d) - %s:%s - H.265/HEVC codec - Copyright 2013-2018 (c) Multicoreware, Inc - http://x265.org - options: %s
+1x XNetSDK.dll
+1x XSDK_GetXNetSDKVersion
+1x WINMM.dll
+1x OPENGL32.dll
+1x bcrypt.dll
+1x D3DCOMPILER_47.dll
+1x WS2_32.dll
+1x CRYPT32.dll
+1x KERNEL32.dll
+1x USER32.dll
+1x GDI32.dll
+1x SHELL32.dll
+1x ole32.dll
+1x ADVAPI32.dll
+1x MSVCP140.dll
+1x RPCRT4.dll
+1x IMM32.dll
+1x IPHLPAPI.DLL
+1x dbghelp.dll
+1x VCRUNTIME140.dll
+1x VCRUNTIME140_1.dll
+1x api-ms-win-crt-runtime-l1-1-0.dll
+1x api-ms-win-crt-math-l1-1-0.dll
+1x api-ms-win-crt-heap-l1-1-0.dll
+1x api-ms-win-crt-convert-l1-1-0.dll
+1x api-ms-win-crt-stdio-l1-1-0.dll
+1x api-ms-win-crt-filesystem-l1-1-0.dll
+1x api-ms-win-crt-string-l1-1-0.dll
+1x api-ms-win-crt-locale-l1-1-0.dll
+1x api-ms-win-crt-time-l1-1-0.dll
+1x api-ms-win-crt-utility-l1-1-0.dll
+1x api-ms-win-crt-environment-l1-1-0.dll
+1x api-ms-win-crt-multibyte-l1-1-0.dll
+1x ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789
+1x 12345678901234567890123456789012345678901234567890123456789012345678901234567890
+1x .?AVINetSDKMSGObject@XSDK_LIB@@
+1x .?AV?$_Ref_count_obj2@UPreloginCallback@BTKit@@@std@@
+1x .?AVIRtspParser@NSXPTL@@
+1x .?AVCXRtspClient@@
+1x .?AVCXStdRtspClient@@
+1x .?AVCRtspPtlParser@NSXPTL@@
+1x .?AVCRtspProtocol@NSXPTL@@
+1x [u16] kernel32.dll
+1x [u16] Software\Intel\MediaSDK\Plugin
+2x [u16] Software\Intel\MediaSDK\Dispatch
+1x [u16] libmfxhw64.dll
+1x [u16] libmfxsw64.dll
+1x [u16] libmfxaudiosw64.dll
+1x [u16] mfxplugin64_hw.dll
+1x [u16] mfxplugin64_sw.dll
+1x [u16] Software\Intel\MediaSDK\Dispatch\tracer
+1x [u16] d3d9.dll
+1x [u16] dxgi.dll
+1x [u16] cfgmgr32.dll
+1x [u16] -./123456789:
+2x [u16]  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+2x [u16]  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_
+1x [u16] Service-0x
+1x [u16] KERNEL32.DLL
+1x [u16] api-ms-win-core-synch-l1-2-0.dll
+1x [u16]  !"#$%&'()*+,-./0123456789:<>@BDFHJLNPRTVXZ\^`bdfhjlnprtwz}
+1x [u16]  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefhjlnprtvxz|~
+1x [u16] atiadlxx.dll
+1x [u16] atiadlxy.dll

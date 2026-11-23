@@ -1,0 +1,89 @@
+PE32+: true sections: 8
+  section .text vsize=664643 rawsize=665088 rawptr=1024
+  section .rdata vsize=189942 rawsize=189952 rawptr=666112
+  section .data vsize=15064 rawsize=4608 rawptr=856064
+  section .pdata vsize=54216 rawsize=54272 rawptr=860672
+  section .gfids vsize=68 rawsize=512 rawptr=914944
+  section .tls vsize=9 rawsize=512 rawptr=915456
+  section .rsrc vsize=488 rawsize=512 rawptr=915968
+  section .reloc vsize=1088 rawsize=1536 rawptr=916480
+end of sections: 918016 file size: 918016 overlay bytes: 0
+sig NSIS: none
+sig Inno: none
+sig InnoLdr: none
+sig 7z: none
+sig ZIP: 6950,20315
+sig MSI_CFB: none
+sig CAB: none
+sig WiXBurn: none
+sig MZ_embedded: 78
+--- interesting strings (69) ---
+8x https://
+1x http://
+1x ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+1x ocx.jftechws.com
+1x https://app.jftechws.com/apps/latest/
+2x Sec-WebSocket-Key
+2x Upgrade: websocket
+1x Upgrade: Websocket
+1x Sec-WebSocket-Accept: %s
+1x loginMsgSig
+1x LoginReq
+1x sendWebsocketMsgSig
+1x onRecvWebsocketMsg
+1x onDisconnectWebsocket
+1x WebSocketServerThread
+1x disconnectWebsocketSig
+1x onCloseWebSocket
+1x VideoPlayToolVersion.ini
+1x VideoPlayToolSetup
+1x https://ocx.jftechws.com:443/web/
+1x VideoPlugin_x64.exe
+1x create websocket server fail
+1x "%1/unsquashfs.exe" %2
+1x websocket connect, nSessionID:%1
+1x websocket disconnect, nSessionID:%1
+1x WebSocketServerThread::onNewConnection::<lambda_ea2660de56cd9976dd0abf1c599a1d7d>::operator ()
+1x  zip 1.01 Copyright 1998-2004 Gilles Vollant - http://www.winimage.com/zLibDll
+1x  unzip 1.01 Copyright 1998-2004 Gilles Vollant - http://www.winimage.com/zLibDll
+1x D:\Workshop\BrowserPlugin\bin\VideoPlayTool.pdb
+1x WS2_32.dll
+1x Qt5Core.dll
+1x Qt5Network.dll
+1x Qt5Widgets.dll
+1x ??0QWebSocketServer@@QEAA@AEBVQString@@W4SslMode@0@PEAVQObject@@@Z
+1x ??1QWebSocketServer@@UEAA@XZ
+1x ?listen@QWebSocketServer@@QEAA_NAEBVQHostAddress@@G@Z
+1x ?newConnection@QWebSocketServer@@QEAAXXZ
+1x ?sendTextMessage@QWebSocket@@QEAA_JAEBVQString@@@Z
+1x ?close@QWebSocket@@QEAAXW4CloseCode@QWebSocketProtocol@@AEBVQString@@@Z
+1x ?disconnected@QWebSocket@@QEAAXXZ
+1x ?textMessageReceived@QWebSocket@@QEAAXAEBVQString@@@Z
+1x ?metaObject@QWebSocketServer@@UEBAPEBUQMetaObject@@XZ
+1x ?nextPendingConnection@QWebSocketServer@@UEAAPEAVQWebSocket@@XZ
+1x ?qt_metacall@QWebSocketServer@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
+1x ?qt_metacast@QWebSocketServer@@UEAAPEAXPEBD@Z
+1x ?staticMetaObject@QWebSocketServer@@2UQMetaObject@@B
+1x ?staticMetaObject@QWebSocket@@2UQMetaObject@@B
+1x Qt5WebSockets.dll
+1x KERNEL32.dll
+1x USER32.dll
+1x MSVCP140.dll
+1x imagehlp.dll
+1x VCRUNTIME140.dll
+1x api-ms-win-crt-runtime-l1-1-0.dll
+1x api-ms-win-crt-stdio-l1-1-0.dll
+1x api-ms-win-crt-string-l1-1-0.dll
+1x api-ms-win-crt-convert-l1-1-0.dll
+1x api-ms-win-crt-math-l1-1-0.dll
+1x api-ms-win-crt-heap-l1-1-0.dll
+1x api-ms-win-crt-filesystem-l1-1-0.dll
+1x api-ms-win-crt-utility-l1-1-0.dll
+1x api-ms-win-crt-time-l1-1-0.dll
+1x api-ms-win-crt-locale-l1-1-0.dll
+1x SHELL32.dll
+1x zlib.dll
+1x .?AV?$_Ref_count_obj@VCUserLoginInfo@@@std@@
+1x .?AVQWebSocketServer@@
+1x .?AVWebSocketServerThread@@
+1x [u16] kernel32.dll

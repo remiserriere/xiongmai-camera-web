@@ -1,0 +1,56 @@
+qtaudio_windows.dll          NotSigned  
+qgenericbearer.dll           Valid      CN=The Qt Company Oy
+cyggcc_s-1.dll               NotSigned  
+cyglzma-5.dll                NotSigned  
+cygwin1.dll                  NotSigned  
+cygz.dll                     NotSigned  
+unsquashfs.exe               NotSigned  
+qsvgicon.dll                 Valid      CN=The Qt Company Oy
+qgif.dll                     Valid      CN=The Qt Company Oy
+qicns.dll                    Valid      CN=The Qt Company Oy
+qico.dll                     Valid      CN=The Qt Company Oy
+qjpeg.dll                    Valid      CN=The Qt Company Oy
+qsvg.dll                     Valid      CN=The Qt Company Oy
+qtga.dll                     Valid      CN=The Qt Company Oy
+qtiff.dll                    Valid      CN=The Qt Company Oy
+qwbmp.dll                    Valid      CN=The Qt Company Oy
+qwebp.dll                    Valid      CN=The Qt Company Oy
+qwindows.dll                 Valid      CN=The Qt Company Oy
+qwindowsvistastyle.dll       Valid      CN=The Qt Company Oy
+avcodec.dll                  NotSigned  
+avdevice.dll                 NotSigned  
+avfilter.dll                 NotSigned  
+avformat.dll                 NotSigned  
+avutil.dll                   NotSigned  
+Browse.exe                   NotSigned  
+concrt140.dll                Valid      CN=Microsoft Corporation
+CStreamDetectionTool.exe     NotSigned  
+D3Dcompiler_47.dll           Valid      CN=Microsoft Corporation
+H264Play.dll                 NotSigned  
+libcrypto-1_1-x64.dll        NotSigned  
+libEGL.dll                   Valid      CN=The Qt Company Oy
+libGLESv2.dll                Valid      CN=The Qt Company Oy
+libssl-1_1-x64.dll           NotSigned  
+mksquashfs.exe               NotSigned  
+msvcp140.dll                 Valid      CN=Microsoft Corporation
+NetSdk.dll                   NotSigned  
+opengl32sw.dll               NotSigned  
+postproc.dll                 NotSigned  
+Qt5Core.dll                  Valid      CN=The Qt Company Oy
+Qt5Gui.dll                   Valid      CN=The Qt Company Oy
+Qt5Network.dll               Valid      CN=The Qt Company Oy
+Qt5Svg.dll                   Valid      CN=The Qt Company Oy
+Qt5WebSockets.dll            Valid      CN=The Qt Company Oy
+Qt5Widgets.dll               Valid      CN=The Qt Company Oy
+StreamReader.dll             NotSigned  
+swresample.dll               NotSigned  
+swscale.dll                  NotSigned  
+vcamp140.dll                 Valid      CN=Microsoft Corporation
+vccorlib140.dll              Valid      CN=Microsoft Corporation
+vcomp140.dll                 Valid      CN=Microsoft Corporation
+vcruntime140_1.dll           Valid      CN=Microsoft Corporation
+vcruntime140.dll             Valid      CN=Microsoft Corporation
+VideoPlayTool.exe            NotSigned  
+VideoPlugin_x64.exe          NotSigned  
+XNetSDK.dll                  NotSigned  
+zlib.dll                     NotSigned  

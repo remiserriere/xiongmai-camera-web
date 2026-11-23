@@ -1,0 +1,14 @@
+{
+  "name": "xiongmai-camera-web",
+  "version": "1.0.0",
+  "description": "Plugin-free local web app for IP camera preview and PTZ control",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.1",
+    "rtsp-relay": "^1.7.7",
+    "ws": "^8.18.0"
+  }
+}

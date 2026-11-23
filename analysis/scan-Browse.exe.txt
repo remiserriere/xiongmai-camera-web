@@ -1,0 +1,31 @@
+PE32+: true sections: 7
+  section .text vsize=24853 rawsize=25088 rawptr=1024
+  section .rdata vsize=22084 rawsize=22528 rawptr=26112
+  section .data vsize=1984 rawsize=512 rawptr=48640
+  section .pdata vsize=2928 rawsize=3072 rawptr=49152
+  section .gfids vsize=56 rawsize=512 rawptr=52224
+  section .rsrc vsize=488 rawsize=512 rawptr=52736
+  section .reloc vsize=232 rawsize=512 rawptr=53248
+end of sections: 53760 file size: 53760 overlay bytes: 0
+sig NSIS: none
+sig Inno: none
+sig InnoLdr: none
+sig 7z: none
+sig ZIP: none
+sig MSI_CFB: none
+sig CAB: none
+sig WiXBurn: none
+sig MZ_embedded: 78
+--- interesting strings (12) ---
+1x Browse.exe Install langauge
+1x Qt5Core.dll
+1x Qt5Widgets.dll
+1x KERNEL32.dll
+1x USER32.dll
+1x VCRUNTIME140.dll
+1x api-ms-win-crt-stdio-l1-1-0.dll
+1x api-ms-win-crt-runtime-l1-1-0.dll
+1x api-ms-win-crt-heap-l1-1-0.dll
+1x api-ms-win-crt-math-l1-1-0.dll
+1x api-ms-win-crt-locale-l1-1-0.dll
+1x SHELL32.dll

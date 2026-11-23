@@ -1,0 +1,81 @@
+# Xiongmai Camera Web – VideoPlayTool plugin replacement
+
+[Français](README.md) | [English](README.en.md)
+
+Local web application that replaces the vendor's Windows plugin (Xiongmai/JFTech) to:
+- connect to the camera (IP, user, password) and load its whole configuration;
+- edit the configuration through tabs (Image, Video, Network, Detection, System, Firmware), with Reload / Save per section;
+- watch the live stream, take a full-resolution snapshot, control PTZ;
+- manage the firmware: version, online check, update from a file, configuration backup and restore.
+
+No configuration file: credentials stay in the local server's memory; the RTSP stream and snapshot are derived from the configuration read from the camera.
+
+## Getting started
+
+Requirements: Node.js 18 or later (ffmpeg is provided by the `ffmpeg-static` dependency).
+
+```powershell
+npm install
+npm start
+```
+
+Open http://127.0.0.1:8080, Connection tab. Optional environment variables: `PORT` (8080), `HOST` (127.0.0.1).
+
+## Languages
+
+The interface and server messages are available in French and English (selector at the top right; defaults to the browser language). Strings live in `public/i18n.js` (interface) and `lib/messages.js` (server).
+
+## Contextual help and value lists
+
+Each setting has a "?" tooltip that clearly separates:
+- **From the original interface (.exe)**: label automatically extracted from the web interface shipped in `VideoPlayToolSetup.exe` (`html/cfg/*.js`, `*.html` and `lg/*.xml` files). "Approximate match" flags a less certain mapping;
+- **AI-generated explanation**: text written by AI (`public/param-help-ai.json`). "AI-generated assumption" flags an unverified guess.
+
+Fields that are drop-down lists in the original interface (codec, resolution, quality, bitrate control, white balance, day/night, exposure, date format…) are drop-down lists here too (`public/param-choices.json`). Values come from the .exe code, filtered by the abilities reported by the camera (codecs and resolutions it actually supports). The few labels badly translated by the vendor are corrected and flagged in the tooltip; the raw value is still shown in brackets.
+
+To regenerate the data extracted from the .exe (after extracting `VideoPlayToolSetup.exe` into `analysis/extracted` with 7-Zip):
+
+```powershell
+node tools/build-param-help.js
+```
+
+## Firmware
+
+- Dumping the current firmware: not possible over the network. The API offers no dump and no debug access (telnet 23/9527) is open; hardware access is required (UART serial port or reading the SPI flash chip).
+- Update from a file: the `.bin` is analysed (`InstallDesc` manifest) and flashing is refused unless its target hardware exactly matches the camera.
+- By default the camera updates itself from `upgrade.secu100.net`: turn this off in Firmware > Automatic update (`AutoUpgradeImp`, `AutoCheck`).
+
+## Security
+
+- By default, the server listens on 127.0.0.1 and rejects HTTP requests whose Host header is not allowed (partial DNS rebinding protection). Do not broaden the listener using `HOST`.
+- Do not expose this service to the Internet.
+- Set an administrator password on the camera (System > Account).
+- The video WebSocket does not check the browser's origin: a third-party site can
+  access the stream while a camera session is connected. Avoid untrusted websites
+  while using the app, and disconnect the camera afterwards.
+- Camera communication uses HTTP and RTSP without authenticated transport.
+  The vendor protocol's application-layer encryption does not establish the
+  camera's identity. Use a trusted network, preferably an isolated one.
+- See the [security review of the plugin and replacement](SECURITY-REVIEW.md)
+  for identified external endpoints, improvements and residual risks.
+
+## Published content and privacy
+
+The repository includes the application sources and static analysis reports of
+the vendor software. The installer, its extracted files and pages downloaded
+from a camera remain local: no redistribution permission has been verified for
+them. To regenerate the help data, supply your own copy of the installer and
+extract it as described above.
+
+Camera configuration exports and diagnostic output are not anonymous examples:
+they may contain credentials, network addresses, a MAC address and a serial
+number. Do not commit them or attach them to an issue without sanitizing them.
+The `.gitignore` exclusions are a precaution, not a secret detector. The address
+`192.0.2.10` shown in the interface is reserved for documentation; replace it with
+your camera's address.
+
+## Tools
+
+- `node tools/test-cgi.js <ip> [user] [password]`: read-only diagnostics (version, updates, configuration export, open ports).
+- `node tools/dump-keys.js <ip> [user] [password]`: lists the settings of each section (read-only).
+- `node tools/build-param-help.js`: regenerates the labels and lists extracted from the .exe.

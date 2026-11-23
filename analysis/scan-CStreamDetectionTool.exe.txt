@@ -1,0 +1,28 @@
+PE32+: false sections: 6
+  section .text vsize=62491 rawsize=62976 rawptr=1024
+  section .rdata vsize=20526 rawsize=20992 rawptr=64000
+  section .data vsize=1936 rawsize=1024 rawptr=84992
+  section .idata vsize=8166 rawsize=8192 rawptr=86016
+  section .rsrc vsize=1084 rawsize=1536 rawptr=94208
+  section .reloc vsize=4918 rawsize=5120 rawptr=95744
+end of sections: 100864 file size: 100864 overlay bytes: 0
+sig NSIS: none
+sig Inno: none
+sig InnoLdr: none
+sig 7z: none
+sig ZIP: none
+sig MSI_CFB: none
+sig CAB: none
+sig WiXBurn: none
+sig MZ_embedded: 78
+--- interesting strings (10) ---
+21x D:\Qt\Qt5.9.7\5.9.7\msvc2015\include\QtCore/qmetatype.h
+1x Start RealPlay Error,loginhandle = %1 channel = %2 error = %3
+1x D:\Qt\Qt5.9.7\5.9.7\msvc2015\include\QtCore/qlist.h
+1x Qt5Core.dll
+1x KERNEL32.dll
+1x MSVCP120.dll
+1x NetSDK.dll
+1x avformat.dll
+1x avcodec.dll
+1x MSVCR120.dll

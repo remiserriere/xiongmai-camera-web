@@ -1,0 +1,493 @@
+
+7-Zip 26.05 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+
+Scanning the drive for archives:
+1 file, 47126299 bytes (45 MiB)
+
+Listing archive: VideoPlayToolSetup.exe
+
+--
+Path = VideoPlayToolSetup.exe
+Type = Nsis
+Physical Size = 47126299
+Method = LZMA:23
+Solid = -
+Headers Size = 63054
+Embedded Stub Size = 53760
+SubType = NSIS-3 Unicode
+
+   Date      Time    Attr         Size   Compressed  Name
+------------------- ----- ------------ ------------  ------------------------
+                    .....                      7686  $PLUGINSDIR\InstallOptions.dll
+                    .....                      6626  $PLUGINSDIR\System.dll
+2007-11-14 21:12:38 .....                       141  $PLUGINSDIR\ioSpecial.ini
+2003-09-23 19:34:00 .....                      1481  $PLUGINSDIR\modern-wizard.bmp
+                    .....                      2039  $PLUGINSDIR\LangDLL.dll
+2026-02-05 07:45:20 .....                      6007  Bin\api-ms-win-base-util-l1-1-0.dll
+2026-02-05 07:45:20 .....                      7230  Bin\api-ms-win-core-com-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6246  Bin\api-ms-win-core-comm-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6186  Bin\api-ms-win-core-console-l1-1-0.dll
+2026-02-05 07:45:20 .....                      5886  Bin\api-ms-win-core-datetime-l1-1-0.dll
+2026-02-05 07:45:20 .....                      5858  Bin\api-ms-win-core-datetime-l1-1-1.dll
+2026-02-05 07:45:20 .....                      5906  Bin\api-ms-win-core-debug-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6083  Bin\api-ms-win-core-debug-l1-1-1.dll
+2026-02-05 07:45:20 .....                      6011  Bin\api-ms-win-core-delayload-l1-1-0.dll
+2026-02-05 07:45:20 .....                      5946  Bin\api-ms-win-core-errorhandling-l1-1-0.dll
+2026-02-05 07:45:20 .....                      5933  Bin\api-ms-win-core-errorhandling-l1-1-1.dll
+2026-02-05 07:45:20 .....                      6042  Bin\api-ms-win-core-fibers-l1-1-0.dll
+2026-02-05 07:45:20 .....                      5849  Bin\api-ms-win-core-fibers-l1-1-1.dll
+2026-02-05 07:45:20 .....                      6935  Bin\api-ms-win-core-file-l1-1-0.dll
+2026-02-05 07:45:20 .....                      5921  Bin\api-ms-win-core-file-l1-2-0.dll
+2026-02-05 07:45:20 .....                      6052  Bin\api-ms-win-core-file-l1-2-1.dll
+2026-02-05 07:45:18 .....                      6182  Bin\API-MS-Win-core-file-l2-1-0.dll
+2026-02-05 07:45:18 .....                      6001  Bin\API-MS-Win-core-file-l2-1-1.dll
+2026-02-05 07:45:20 .....                      5919  Bin\api-ms-win-core-handle-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6061  Bin\api-ms-win-core-heap-l1-1-0.dll
+2026-02-05 07:45:18 .....                      6162  Bin\API-MS-Win-Core-Heap-Obsolete-L1-1-0.dll
+2026-02-05 07:45:20 .....                      6091  Bin\api-ms-win-core-interlocked-l1-1-0.dll
+2026-02-05 07:45:20 .....                      5965  Bin\api-ms-win-core-io-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6042  Bin\api-ms-win-core-io-l1-1-1.dll
+2026-02-05 07:45:20 .....                      6907  Bin\api-ms-win-core-kernel32-legacy-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6280  Bin\api-ms-win-core-kernel32-legacy-l1-1-1.dll
+2026-02-05 07:45:18 .....                      6186  Bin\API-MS-Win-Core-Kernel32-Private-L1-1-0.dll
+2026-02-05 07:45:18 .....                      5867  Bin\API-MS-Win-Core-Kernel32-Private-L1-1-1.dll
+2026-02-05 07:45:20 .....                      6193  Bin\api-ms-win-core-libraryloader-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6074  Bin\api-ms-win-core-libraryloader-l1-1-1.dll
+2026-02-05 07:45:20 .....                      6643  Bin\api-ms-win-core-localization-l1-2-0.dll
+2026-02-05 07:45:20 .....                      5863  Bin\api-ms-win-core-localization-l1-2-1.dll
+2026-02-05 07:45:18 .....                      6021  Bin\API-MS-Win-core-localization-obsolete-l1-2-0.dll
+2026-02-05 07:45:20 .....                      6064  Bin\api-ms-win-core-memory-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6286  Bin\api-ms-win-core-memory-l1-1-1.dll
+2026-02-05 07:45:20 .....                      6045  Bin\api-ms-win-core-memory-l1-1-2.dll
+2026-02-05 07:45:20 .....                      6158  Bin\api-ms-win-core-namedpipe-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6032  Bin\api-ms-win-core-privateprofile-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6032  Bin\api-ms-win-core-privateprofile-l1-1-1.dll
+2026-02-05 07:45:20 .....                      6287  Bin\api-ms-win-core-processenvironment-l1-1-0.dll
+2026-02-05 07:45:20 .....                      5903  Bin\api-ms-win-core-processenvironment-l1-2-0.dll
+2026-02-05 07:45:20 .....                      6557  Bin\api-ms-win-core-processthreads-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6243  Bin\api-ms-win-core-processthreads-l1-1-1.dll
+2026-02-05 07:45:20 .....                      6002  Bin\api-ms-win-core-processthreads-l1-1-2.dll
+2026-02-05 07:45:20 .....                      6106  Bin\api-ms-win-core-processtopology-obsolete-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6029  Bin\api-ms-win-core-profile-l1-1-0.dll
+2026-02-05 07:45:20 .....                      5935  Bin\api-ms-win-core-realtime-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6390  Bin\api-ms-win-core-registry-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6411  Bin\api-ms-win-core-registry-l2-1-0.dll
+2026-02-05 07:45:20 .....                      6227  Bin\api-ms-win-core-rtlsupport-l1-1-0.dll
+2026-02-05 07:45:20 .....                      7022  Bin\api-ms-win-core-shlwapi-legacy-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6418  Bin\api-ms-win-core-shlwapi-obsolete-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6023  Bin\api-ms-win-core-shutdown-l1-1-0.dll
+2026-02-05 07:45:20 .....                      5959  Bin\api-ms-win-core-string-l1-1-0.dll
+2026-02-05 07:45:18 .....                      6126  Bin\API-MS-Win-core-string-l2-1-0.dll
+2026-02-05 07:45:18 .....                      6091  Bin\API-MS-Win-core-string-obsolete-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6148  Bin\api-ms-win-core-stringansi-l1-1-0.dll
+2026-02-05 07:45:20 .....                      5856  Bin\api-ms-win-core-stringloader-l1-1-1.dll
+2026-02-05 07:45:20 .....                      6392  Bin\api-ms-win-core-synch-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6126  Bin\api-ms-win-core-synch-l1-2-0.dll
+2026-02-05 07:45:20 .....                      6313  Bin\api-ms-win-core-sysinfo-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6162  Bin\api-ms-win-core-sysinfo-l1-2-0.dll
+2026-02-05 07:45:20 .....                      6112  Bin\api-ms-win-core-sysinfo-l1-2-1.dll
+2026-02-05 07:45:20 .....                      6572  Bin\api-ms-win-core-threadpool-l1-2-0.dll
+2026-02-05 07:45:20 .....                      5955  Bin\api-ms-win-core-threadpool-legacy-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6068  Bin\api-ms-win-core-threadpool-private-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6054  Bin\api-ms-win-core-timezone-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6474  Bin\api-ms-win-core-url-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6049  Bin\api-ms-win-core-util-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6056  Bin\api-ms-win-core-version-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6051  Bin\api-ms-win-core-wow64-l1-1-0.dll
+2026-02-05 07:45:20 .....                      5983  Bin\api-ms-win-core-xstate-l1-1-0.dll
+2026-02-05 07:45:18 .....                      6094  Bin\API-MS-Win-core-xstate-l2-1-0.dll
+2026-02-05 07:45:20 .....                      6173  Bin\api-ms-win-crt-conio-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6894  Bin\api-ms-win-crt-convert-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6031  Bin\api-ms-win-crt-environment-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6675  Bin\api-ms-win-crt-filesystem-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6170  Bin\api-ms-win-crt-heap-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6148  Bin\api-ms-win-crt-locale-l1-1-0.dll
+2026-02-05 07:45:20 .....                      8397  Bin\api-ms-win-crt-math-l1-1-0.dll
+2026-02-05 07:45:20 .....                      7656  Bin\api-ms-win-crt-multibyte-l1-1-0.dll
+2026-02-05 07:45:20 .....                     16294  Bin\api-ms-win-crt-private-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6344  Bin\api-ms-win-crt-process-l1-1-0.dll
+2026-02-05 07:45:20 .....                      7310  Bin\api-ms-win-crt-runtime-l1-1-0.dll
+2026-02-05 07:45:20 .....                      7651  Bin\api-ms-win-crt-stdio-l1-1-0.dll
+2026-02-05 07:45:20 .....                      7646  Bin\api-ms-win-crt-string-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6588  Bin\api-ms-win-crt-time-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6295  Bin\api-ms-win-crt-utility-l1-1-0.dll
+2026-02-05 07:45:18 .....                      6547  Bin\API-MS-Win-devices-config-L1-1-0.dll
+2026-02-05 07:45:18 .....                      6587  Bin\API-MS-Win-devices-config-L1-1-1.dll
+2026-02-05 07:45:18 .....                      6142  Bin\API-MS-Win-Eventing-ClassicProvider-L1-1-0.dll
+2026-02-05 07:45:20 .....                      6037  Bin\api-ms-win-eventing-consumer-l1-1-0.dll
+2026-02-05 07:45:18 .....                      6179  Bin\API-MS-Win-Eventing-Controller-L1-1-0.dll
+2026-02-05 07:45:18 .....                      6185  Bin\API-MS-Win-Eventing-Legacy-L1-1-0.dll
+2026-02-05 07:45:18 .....                      6164  Bin\API-MS-Win-Eventing-Provider-L1-1-0.dll
+2026-02-05 07:45:18 .....                      5949  Bin\API-MS-Win-EventLog-Legacy-L1-1-0.dll
+2026-02-05 07:45:20 .....                      7359  Bin\api-ms-win-security-base-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6507  Bin\api-ms-win-security-cryptoapi-l1-1-0.dll
+2026-02-05 07:45:18 .....                      6096  Bin\API-MS-Win-Security-Lsalookup-L2-1-0.dll
+2026-02-05 07:45:18 .....                      5858  Bin\API-MS-Win-Security-Lsalookup-L2-1-1.dll
+2026-02-05 07:45:18 .....                      6345  Bin\API-MS-Win-security-lsapolicy-l1-1-0.dll
+2026-02-05 07:45:18 .....                      6084  Bin\API-MS-Win-security-provider-L1-1-0.dll
+2026-02-05 07:45:20 .....                      6070  Bin\api-ms-win-security-sddl-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6058  Bin\api-ms-win-service-core-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6061  Bin\api-ms-win-service-core-l1-1-1.dll
+2026-02-05 07:45:20 .....                      6102  Bin\api-ms-win-service-management-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6120  Bin\api-ms-win-service-management-l2-1-0.dll
+2026-02-05 07:45:20 .....                      6297  Bin\api-ms-win-service-private-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6175  Bin\api-ms-win-service-private-l1-1-1.dll
+2026-02-05 07:45:20 .....                      6255  Bin\api-ms-win-service-winsvc-l1-1-0.dll
+2026-02-05 07:45:20 .....                      6035  Bin\api-ms-win-shcore-stream-l1-1-0.dll
+2026-02-05 07:45:20 .....                   1071622  Bin\libcrypto-1_1-x64.dll
+2026-02-05 07:45:20 .....                    195533  Bin\libssl-1_1-x64.dll
+2026-02-05 07:45:20 .....                     18685  Bin\audio\qtaudio_windows.dll
+2026-02-05 07:45:20 .....                   7429495  Bin\avcodec.dll
+2026-02-05 07:45:20 .....                    884197  Bin\avdevice.dll
+2026-02-05 07:45:20 .....                   2160302  Bin\avfilter.dll
+2026-02-05 07:45:20 .....                   3104556  Bin\avformat.dll
+2026-02-05 07:45:20 .....                    169532  Bin\avutil.dll
+2026-02-05 07:45:20 .....                     21349  Bin\bearer\qgenericbearer.dll
+2026-02-05 07:45:18 .....                     16792  Bin\Browse.exe
+2026-02-05 07:45:18 .....                      3808  Bin\Cfg\tip.png
+2026-02-05 07:45:20 .....                     39597  Bin\compress\cyggcc_s-1.dll
+2026-02-05 07:45:20 .....                     61888  Bin\compress\cyglzma-5.dll
+2026-02-05 07:45:20 .....                    862616  Bin\compress\cygwin1.dll
+2026-02-05 07:45:20 .....                     37465  Bin\compress\cygz.dll
+2026-02-05 07:45:20 .....                     45625  Bin\compress\unsquashfs.exe
+2026-02-05 07:45:20 .....                    124311  Bin\concrt140.dll
+2026-02-05 07:45:18 .....                     22482  Bin\CStreamDetectionTool.exe
+2026-02-05 07:45:18 .....                   1381077  Bin\D3Dcompiler_47.dll
+2026-02-05 07:45:18 .....                    274384  Bin\H264Play.dll
+2026-02-05 07:45:20 .....                     18230  Bin\iconengines\qsvgicon.dll
+2026-02-05 07:45:20 .....                     17670  Bin\imageformats\qgif.dll
+2026-02-05 07:45:20 .....                     19810  Bin\imageformats\qicns.dll
+2026-02-05 07:45:20 .....                     17227  Bin\imageformats\qico.dll
+2026-02-05 07:45:20 .....                     99176  Bin\imageformats\qjpeg.dll
+2026-02-05 07:45:20 .....                     14098  Bin\imageformats\qsvg.dll
+2026-02-05 07:45:20 .....                     13817  Bin\imageformats\qtga.dll
+2026-02-05 07:45:20 .....                    113185  Bin\imageformats\qtiff.dll
+2026-02-05 07:45:20 .....                     13198  Bin\imageformats\qwbmp.dll
+2026-02-05 07:45:20 .....                    214789  Bin\imageformats\qwebp.dll
+2026-02-05 07:45:20 .....                     10162  Bin\libEGL.dll
+2026-02-05 07:45:20 .....                    967428  Bin\libGLESv2.dll
+2026-02-05 07:45:20 .....                      5707  Bin\license\Open Source Software Licenses.txt
+2026-02-05 07:45:20 .....                     66414  Bin\mksquashfs.exe
+2026-02-05 07:45:20 .....                    152284  Bin\msvcp140.dll
+2026-02-05 07:45:20 .....                   5552757  Bin\opengl32sw.dll
+2026-02-05 07:45:18 .....                       311  Bin\OprEn.ini
+2026-02-05 07:45:20 .....                    594346  Bin\platforms\qwindows.dll
+2026-02-05 07:45:20 .....                     19675  Bin\postproc.dll
+2026-02-05 07:45:18 .....                   2191713  Bin\Qt5Core.dll
+2026-02-05 07:45:18 .....                   2024937  Bin\Qt5Gui.dll
+2026-02-05 07:45:18 .....                    441626  Bin\Qt5Network.dll
+2026-02-05 07:45:18 .....                    108380  Bin\Qt5Svg.dll
+2026-02-05 07:45:18 .....                     52123  Bin\Qt5WebSockets.dll
+2026-02-05 07:45:18 .....                   1976161  Bin\Qt5Widgets.dll
+2026-02-05 07:45:18 .....                     25090  Bin\Sound\AlarmSound.wav
+2026-02-05 07:45:18 .....                     96797  Bin\StreamReader.dll
+2026-02-05 07:45:20 .....                       485  Bin\style.ss
+2026-02-05 07:45:20 .....                     60300  Bin\styles\qwindowsvistastyle.dll
+2026-02-05 07:45:20 .....                    112623  Bin\swresample.dll
+2026-02-05 07:45:20 .....                    119876  Bin\swscale.dll
+2026-02-05 07:45:20 .....                     38637  Bin\translations\qt_ar.qm
+2026-02-05 07:45:20 .....                     37590  Bin\translations\qt_bg.qm
+2026-02-05 07:45:20 .....                     45965  Bin\translations\qt_ca.qm
+2026-02-05 07:45:20 .....                     39643  Bin\translations\qt_cs.qm
+2026-02-05 07:45:20 .....                     41399  Bin\translations\qt_da.qm
+2026-02-05 07:45:20 .....                     47065  Bin\translations\qt_de.qm
+2026-02-05 07:45:20 .....           33           33  Bin\translations\qt_en.qm
+2026-02-05 07:45:20 .....                     37164  Bin\translations\qt_es.qm
+2026-02-05 07:45:20 .....                     40530  Bin\translations\qt_fi.qm
+2026-02-05 07:45:20 .....                     36860  Bin\translations\qt_fr.qm
+2026-02-05 07:45:20 .....                     40270  Bin\translations\qt_gd.qm
+2026-02-05 07:45:20 .....                     34069  Bin\translations\qt_he.qm
+2026-02-05 07:45:20 .....                     37014  Bin\translations\qt_hu.qm
+2026-02-05 07:45:20 .....                     35659  Bin\translations\qt_it.qm
+2026-02-05 07:45:20 .....                     35497  Bin\translations\qt_ja.qm
+2026-02-05 07:45:20 .....                     42183  Bin\translations\qt_ko.qm
+2026-02-05 07:45:20 .....                     35868  Bin\translations\qt_lv.qm
+2026-02-05 07:45:20 .....                     37103  Bin\translations\qt_pl.qm
+2026-02-05 07:45:20 .....                     46456  Bin\translations\qt_ru.qm
+2026-02-05 07:45:20 .....                     30377  Bin\translations\qt_sk.qm
+2026-02-05 07:45:20 .....                     45239  Bin\translations\qt_tr.qm
+2026-02-05 07:45:20 .....                     37168  Bin\translations\qt_uk.qm
+2026-02-05 07:45:20 .....                     33760  Bin\translations\qt_zh_CN.qm
+2026-02-05 07:45:20 .....                     37686  Bin\translations\qt_zh_TW.qm
+2026-02-05 07:45:20 .....                    169136  Bin\vcamp140.dll
+2026-02-05 07:45:20 .....                     91986  Bin\vccorlib140.dll
+2026-02-05 07:45:20 .....                     81064  Bin\vcomp140.dll
+2026-02-05 07:45:20 .....                     42815  Bin\vcruntime140.dll
+2026-02-05 07:45:20 .....                     20082  Bin\vcruntime140_1.dll
+2026-09-15 08:15:52 .....                    203941  Bin\VideoPlayTool.exe
+2026-09-15 09:04:40 .....                       113  Bin\VideoPlayToolVersion.ini
+2026-09-15 08:15:40 .....                    449352  Bin\VideoPlugin_x64.exe
+2026-02-05 07:45:20 .....                     67130  Bin\zlib.dll
+2026-06-01 02:10:30 .....                   9663874  Bin\XNetSDK.dll
+2026-06-01 02:10:30 .....                    223404  Bin\NetSdk.dll
+2026-08-27 02:57:20 .....           16           16  Web\WebVersion.txt
+2026-02-05 07:45:52 .....                     20326  Web\crypt-js\crypto-js.min.js
+2026-08-27 02:57:20 .....                       755  Web\html\alarm.html
+2026-08-27 02:57:22 .....                      2280  Web\html\alarm.js
+2026-08-27 02:57:22 .....                       738  Web\html\client.html
+2026-08-27 02:57:22 .....                      1654  Web\html\client.js
+2026-08-27 02:57:22 .....                      1128  Web\html\config.html
+2026-08-27 02:57:22 .....                      3732  Web\html\config.js
+2026-02-05 07:45:52 .....                      1087  Web\html\forgetpwd.html
+2026-02-05 07:45:52 .....                      2395  Web\html\forgetpwd.js
+2026-08-27 02:57:22 .....                      2469  Web\html\live.html
+2026-08-27 02:57:22 .....                     13410  Web\html\live.js
+2026-03-13 03:44:06 .....                       501  Web\html\login.html
+2026-08-27 02:57:22 .....                      3178  Web\html\login.js
+2026-08-27 02:57:22 .....                      1507  Web\html\playback.html
+2026-08-27 02:57:22 .....                     10324  Web\html\playback.js
+2026-02-05 07:45:52 .....                      4237  Web\html\timeline.js
+2026-02-05 07:45:52 .....                       648  Web\html\timesection.html
+2026-02-05 07:45:52 .....                       505  Web\html\cfg\Advance_Account.html
+2026-02-05 07:45:52 .....                      6237  Web\html\cfg\Advance_Account.js
+2026-02-05 07:45:52 .....                       621  Web\html\cfg\Advance_AutoMaintain.html
+2026-02-05 07:45:52 .....                       911  Web\html\cfg\Advance_AutoMaintain.js
+2026-02-05 07:45:52 .....                       668  Web\html\cfg\Advance_ChannelType.html
+2026-02-05 07:45:52 .....                      5104  Web\html\cfg\Advance_ChannelType.js
+2026-02-05 07:45:52 .....                       705  Web\html\cfg\Advance_Default.html
+2026-08-27 02:57:22 .....                      2715  Web\html\cfg\Advance_Default.js
+2026-02-05 07:45:52 .....                       968  Web\html\cfg\Advance_Digital.html
+2026-02-05 07:45:52 .....                      4367  Web\html\cfg\Advance_Digital.js
+2026-02-05 07:45:52 .....                       500  Web\html\cfg\Advance_HddManager.html
+2026-03-24 12:03:18 .....                      3525  Web\html\cfg\Advance_HddManager.js
+2026-02-05 07:45:52 .....                       455  Web\html\cfg\Advance_ImportEx.html
+2026-02-05 07:45:52 .....                      3441  Web\html\cfg\Advance_ImportEx.js
+2026-02-05 07:45:52 .....                       247  Web\html\cfg\Advance_Reboot.html
+2026-02-05 07:45:52 .....                       161  Web\html\cfg\Advance_Reboot.js
+2026-02-05 07:45:52 .....                      1533  Web\html\cfg\Advance_Remote.html
+2026-02-05 07:45:52 .....                      5975  Web\html\cfg\Advance_Remote.js
+2026-02-05 07:45:52 .....                       879  Web\html\cfg\Advance_Upgrade.html
+2026-03-13 03:44:06 .....                      2027  Web\html\cfg\Advance_Upgrade.js
+2026-02-05 07:45:52 .....                      1337  Web\html\cfg\Advance_UserDlg.html
+2026-02-05 07:45:52 .....                      1204  Web\html\cfg\Alarm_AdvanceDlg.html
+2026-08-27 02:57:22 .....                      1567  Web\html\cfg\Alarm_CarShape.html
+2026-08-27 02:57:22 .....                      5870  Web\html\cfg\Alarm_CarShape.js
+2026-02-05 07:45:52 .....                       947  Web\html\cfg\Alarm_Exception.html
+2026-08-27 02:57:22 .....                      2189  Web\html\cfg\Alarm_Exception.js
+2026-02-05 07:45:52 .....                      1173  Web\html\cfg\Alarm_FaceDetect.html
+2026-08-27 02:57:22 .....                      3218  Web\html\cfg\Alarm_FaceDetect.js
+2026-08-27 02:57:22 .....                      1569  Web\html\cfg\Alarm_Fire.html
+2026-08-27 02:57:22 .....                      5392  Web\html\cfg\Alarm_Fire.js
+2026-02-05 07:45:52 .....                      1545  Web\html\cfg\Alarm_HumanDetect.html
+2026-08-27 02:57:22 .....                      3650  Web\html\cfg\Alarm_HumanDetect.js
+2026-02-05 07:45:52 .....                      1502  Web\html\cfg\Alarm_Input.html
+2026-08-27 02:57:22 .....                      4745  Web\html\cfg\Alarm_Input.js
+2026-02-05 07:45:52 .....                       508  Web\html\cfg\Alarm_Intelligent.html
+2026-02-05 07:45:52 .....                      3995  Web\html\cfg\Alarm_Intelligent.js
+2026-02-05 07:45:52 .....                      1602  Web\html\cfg\Alarm_Motion.html
+2026-08-27 02:57:22 .....                     11445  Web\html\cfg\Alarm_Motion.js
+2026-02-05 07:45:52 .....                       377  Web\html\cfg\Alarm_Output.html
+2026-02-05 07:45:52 .....                      1110  Web\html\cfg\Alarm_Output.js
+2026-02-05 07:45:52 .....                      1116  Web\html\cfg\Alarm_PID.html
+2026-08-27 02:57:22 .....                      1931  Web\html\cfg\Alarm_PID.js
+2026-02-05 07:45:52 .....                      1001  Web\html\cfg\Alarm_SmartAlarm.html
+2026-08-27 02:57:22 .....                     12214  Web\html\cfg\Alarm_SmartAlarm.js
+2026-02-05 07:45:52 .....                      1444  Web\html\cfg\Alarm_SmartAlarm_G2.html
+2026-08-27 02:57:22 .....                      8034  Web\html\cfg\Alarm_SmartAlarm_G2.js
+2026-02-05 07:45:52 .....                      1421  Web\html\cfg\Alarm_VideoBlind.html
+2026-08-27 02:57:22 .....                      3269  Web\html\cfg\Alarm_VideoBlind.js
+2026-02-05 07:45:52 .....                      1378  Web\html\cfg\Alarm_VideoLoss.html
+2026-08-27 02:57:22 .....                      3316  Web\html\cfg\Alarm_VideoLoss.js
+2026-08-27 02:57:22 .....                      8344  Web\html\cfg\Human_Zone.js
+2026-02-05 07:45:52 .....                      1257  Web\html\cfg\IPCParam_Advanced.html
+2026-02-05 07:45:52 .....                      3132  Web\html\cfg\IPCParam_Advanced.js
+2026-02-05 07:45:52 .....                      1732  Web\html\cfg\IPCParam_ImageSet.html
+2026-02-05 07:45:52 .....                      8348  Web\html\cfg\IPCParam_ImageSet.js
+2026-02-05 07:45:52 .....                       687  Web\html\cfg\IPCParam_LightSet.html
+2026-02-05 07:45:52 .....                      2384  Web\html\cfg\IPCParam_LightSet.js
+2026-02-05 07:45:52 .....                       275  Web\html\cfg\IPCParam_Maintain.html
+2026-02-05 07:45:52 .....                       927  Web\html\cfg\IPCParam_Maintain.js
+2026-02-05 07:45:52 .....                       500  Web\html\cfg\IPCParam_Version.html
+2026-02-05 07:45:52 .....                      1295  Web\html\cfg\IPCParam_Version.js
+2026-02-05 07:45:52 .....                       288  Web\html\cfg\Info_ChanStatus.html
+2026-02-05 07:45:52 .....                       704  Web\html\cfg\Info_ChanStatus.js
+2026-02-05 07:45:52 .....                      1232  Web\html\cfg\Info_CustomerFlow.html
+2026-02-05 07:45:52 .....                      4686  Web\html\cfg\Info_CustomerFlow.js
+2026-02-05 07:45:52 .....                       972  Web\html\cfg\Info_DevInfo.html
+2026-02-05 07:45:52 .....                       478  Web\html\cfg\Info_HddInfo.html
+2026-03-24 12:03:18 .....                      2653  Web\html\cfg\Info_HddInfo.js
+2026-08-27 02:57:22 .....                       841  Web\html\cfg\Info_Log.html
+2026-08-27 02:57:22 .....                      3991  Web\html\cfg\Info_Log.js
+2026-02-05 07:45:52 .....                       215  Web\html\cfg\Info_QR.html
+2026-08-27 02:57:22 .....                       919  Web\html\cfg\Info_QR.js
+2026-02-05 07:45:52 .....                       571  Web\html\cfg\Info_Version.html
+2026-08-27 02:57:22 .....                      4186  Web\html\cfg\Info_Version.js
+2026-02-05 07:45:52 .....                       580  Web\html\cfg\NetService_3G.html
+2026-02-05 07:45:52 .....                       955  Web\html\cfg\NetService_3G.js
+2026-02-05 07:45:52 .....                       533  Web\html\cfg\NetService_ARSP.html
+2026-02-05 07:45:52 .....                       856  Web\html\cfg\NetService_ARSP.js
+2026-02-05 07:45:52 .....                       654  Web\html\cfg\NetService_AlarmCenter.html
+2026-02-05 07:45:52 .....                      1050  Web\html\cfg\NetService_AlarmCenter.js
+2026-02-05 07:45:52 .....                       400  Web\html\cfg\NetService_DAS.html
+2026-02-05 07:45:52 .....                       625  Web\html\cfg\NetService_DAS.js
+2026-02-05 07:45:52 .....                       616  Web\html\cfg\NetService_DDNS.html
+2026-02-05 07:45:52 .....                      1427  Web\html\cfg\NetService_DDNS.js
+2026-08-27 02:57:22 .....                      1235  Web\html\cfg\NetService_Email.html
+2026-08-27 02:57:22 .....                      1852  Web\html\cfg\NetService_Email.js
+2026-02-05 07:45:52 .....                       730  Web\html\cfg\NetService_FTP.html
+2026-02-05 07:45:52 .....                      1120  Web\html\cfg\NetService_FTP.js
+2026-02-05 07:45:52 .....                       668  Web\html\cfg\NetService_Gat1400.html
+2026-02-05 07:45:52 .....                       933  Web\html\cfg\NetService_Gat1400.js
+2026-02-05 07:45:52 .....                       688  Web\html\cfg\NetService_IPFilter.html
+2026-02-05 07:45:52 .....                      1897  Web\html\cfg\NetService_IPFilter.js
+2026-02-05 07:45:52 .....                       553  Web\html\cfg\NetService_NTP.html
+2026-02-05 07:45:52 .....                       760  Web\html\cfg\NetService_NTP.js
+2026-02-05 07:45:52 .....                       414  Web\html\cfg\NetService_Nat.html
+2026-02-05 07:45:52 .....                       911  Web\html\cfg\NetService_Nat.js
+2026-02-05 07:45:52 .....                       479  Web\html\cfg\NetService_PMS.html
+2026-02-05 07:45:52 .....                       882  Web\html\cfg\NetService_PMS.js
+2026-02-05 07:45:52 .....                       415  Web\html\cfg\NetService_PPPoE.html
+2026-02-05 07:45:52 .....                       570  Web\html\cfg\NetService_PPPoE.js
+2026-03-13 03:44:06 .....                       421  Web\html\cfg\NetService_RTMP.html
+2026-03-13 03:44:06 .....                       660  Web\html\cfg\NetService_RTMP.js
+2026-02-05 07:45:52 .....                       306  Web\html\cfg\NetService_RTSP.html
+2026-02-05 07:45:52 .....                       881  Web\html\cfg\NetService_RTSP.js
+2026-08-27 02:57:22 .....                      1037  Web\html\cfg\NetService_SPVMN.html
+2026-08-27 02:57:22 .....                      2476  Web\html\cfg\NetService_SPVMN.js
+2026-02-05 07:45:52 .....                       427  Web\html\cfg\NetService_SerialTrans.html
+2026-02-05 07:45:52 .....                       583  Web\html\cfg\NetService_SerialTrans.js
+2026-02-05 07:45:52 .....                       456  Web\html\cfg\NetService_UPNP.html
+2026-02-05 07:45:52 .....                       494  Web\html\cfg\NetService_UPNP.js
+2026-02-05 07:45:52 .....                       762  Web\html\cfg\NetService_Wifi.html
+2026-02-05 07:45:52 .....                      1928  Web\html\cfg\NetService_Wifi.js
+2026-06-06 09:16:38 .....                       615  Web\html\cfg\OSC_Zone.html
+2026-02-05 07:45:52 .....                      2305  Web\html\cfg\OSC_Zone.js
+2026-06-06 09:16:38 .....                      1436  Web\html\cfg\PEA_Zone.html
+2026-02-05 07:45:52 .....                      4928  Web\html\cfg\PEA_Zone.js
+2026-02-05 07:45:52 .....                       608  Web\html\cfg\Record_Ctrl.html
+2026-02-05 07:45:52 .....                      2259  Web\html\cfg\Record_Ctrl.js
+2026-02-05 07:45:52 .....                      1468  Web\html\cfg\Record_Manager.html
+2026-02-05 07:45:52 .....                      4964  Web\html\cfg\Record_Manager.js
+2026-02-05 07:45:52 .....                       505  Web\html\cfg\Record_Manager_jh.html
+2026-02-05 07:45:52 .....                      3223  Web\html\cfg\Record_Manager_jh.js
+2026-02-05 07:45:52 .....                      1009  Web\html\cfg\Record_Snap.html
+2026-02-05 07:45:52 .....                      3171  Web\html\cfg\Record_Snap.js
+2026-02-05 07:45:52 .....                      1143  Web\html\cfg\Record_SnapSchedule.html
+2026-02-05 07:45:52 .....                      3521  Web\html\cfg\Record_SnapSchedule.js
+2026-02-05 07:45:52 .....                      1898  Web\html\cfg\System_CameraParam.html
+2026-02-05 07:45:52 .....                      6871  Web\html\cfg\System_CameraParam.js
+2026-02-05 07:45:52 .....                       905  Web\html\cfg\System_CameraParam_Simp.html
+2026-02-05 07:45:52 .....                      2536  Web\html\cfg\System_CameraParam_Simp.js
+2026-02-05 07:45:52 .....                      1280  Web\html\cfg\System_ColorParam.html
+2026-08-27 02:57:22 .....                      5004  Web\html\cfg\System_ColorParam.js
+2026-02-05 07:45:52 .....                       913  Web\html\cfg\System_Display.html
+2026-02-05 07:45:52 .....                      9977  Web\html\cfg\System_Display.js
+2026-08-27 02:57:22 .....                      1245  Web\html\cfg\System_Encode.html
+2026-08-27 02:57:22 .....                     15796  Web\html\cfg\System_Encode.js
+2026-02-05 07:45:52 .....                      1015  Web\html\cfg\System_General.html
+2026-02-05 07:45:52 .....                      5860  Web\html\cfg\System_General.js
+2026-08-27 02:57:22 .....                      1542  Web\html\cfg\System_Network.html
+2026-08-27 02:57:22 .....                      7206  Web\html\cfg\System_Network.js
+2026-02-05 07:45:52 .....                       547  Web\html\cfg\System_NetworkIPV6.html
+2026-02-05 07:45:52 .....                      2004  Web\html\cfg\System_NetworkIPV6.js
+2026-02-05 07:45:52 .....                       773  Web\html\cfg\System_PTZ.html
+2026-02-05 07:45:52 .....                      2609  Web\html\cfg\System_PTZ.js
+2026-02-05 07:45:52 .....                       268  Web\html\cfg\System_ROI.html
+2026-08-27 02:57:22 .....                      1027  Web\html\cfg\System_ROI.js
+2026-02-05 07:45:52 .....                       367  Web\html\cfg\System_Serial.html
+2026-08-27 02:57:22 .....                       753  Web\html\cfg\System_Serial.js
+2026-02-05 07:45:52 .....                       760  Web\html\cfg\security.html
+2026-02-05 07:45:52 .....                      2065  Web\html\cfg\security.js
+2026-02-05 07:45:52 .....          177          177  Web\images_general\add.png
+2026-02-05 07:45:52 .....                      3826  Web\images_general\alarmTip.png
+2026-02-05 07:45:52 .....          221          221  Web\images_general\arrow.png
+2026-02-05 07:45:52 .....          268          268  Web\images_general\arrow_left.png
+2026-02-05 07:45:52 .....          264          264  Web\images_general\arrow_title.png
+2026-02-05 07:45:52 .....          119          119  Web\images_general\cbox.png
+2026-02-05 07:45:52 .....          246          246  Web\images_general\cbox_on.png
+2026-02-05 07:45:52 .....                      1277  Web\images_general\checkbox-selected-unchange.png
+2026-02-05 07:45:52 .....          411          411  Web\images_general\checkbox-selected.png
+2026-02-05 07:45:52 .....          400          400  Web\images_general\checkbox-unselected.png
+2026-02-05 07:45:52 .....          812          812  Web\images_general\close.png
+2026-02-05 07:45:52 .....         5827         5827  Web\images_general\configIcon.png
+2026-02-05 07:45:52 .....          194          194  Web\images_general\date.png
+2026-02-05 07:45:52 .....          231          231  Web\images_general\delete.png
+2026-02-05 07:45:52 .....          509          509  Web\images_general\direct.png
+2026-02-05 07:45:52 .....         3363         3363  Web\images_general\directionIcon.png
+2026-02-05 07:45:52 .....          578          578  Web\images_general\disable.png
+2026-02-05 07:45:52 .....          370          370  Web\images_general\disenabled.png
+2026-02-05 07:45:52 .....          424          424  Web\images_general\edit.png
+2026-02-05 07:45:52 .....          531          531  Web\images_general\edit_nc.png
+2026-02-05 07:45:52 .....          568          568  Web\images_general\edit_nc_hover.png
+2026-02-05 07:45:52 .....          557          557  Web\images_general\editnet.png
+2026-02-05 07:45:52 .....          388          388  Web\images_general\enable.png
+2026-02-05 07:45:52 .....          998          998  Web\images_general\eye_close.png
+2026-02-05 07:45:52 .....          443          443  Web\images_general\eye_close_small.png
+2026-02-05 07:45:52 .....          911          911  Web\images_general\eye_open.png
+2026-02-05 07:45:52 .....          419          419  Web\images_general\eye_open_small.png
+2026-02-05 07:45:52 .....                      2668  Web\images_general\logo.png
+2026-02-05 07:45:52 .....          441          441  Web\images_general\off.png
+2026-02-05 07:45:52 .....          454          454  Web\images_general\on.png
+2026-02-05 07:45:52 .....          427          427  Web\images_general\openfile.png
+2026-02-05 07:45:52 .....         2386         2386  Web\images_general\out.png
+2026-02-05 07:45:52 .....                     13755  Web\images_general\pbIcon.png
+2026-02-05 07:45:52 .....          454          454  Web\images_general\position_ui4.png
+2026-02-05 07:45:52 .....          393          393  Web\images_general\radio_check.png
+2026-02-05 07:45:52 .....          384          384  Web\images_general\radio_uncheck.png
+2026-02-05 07:45:52 .....         4830         4830  Web\images_general\shapeIcon.png
+2026-08-27 02:57:22 .....                     12384  Web\images_general\skin.css
+2026-02-05 07:45:52 .....          415          415  Web\images_general\tip.png
+2026-02-05 07:45:52 .....          380          380  Web\images_general\toA.png
+2026-02-05 07:45:52 .....          399          399  Web\images_general\toA1.png
+2026-02-05 07:45:52 .....          319          319  Web\images_general\toD.png
+2026-02-05 07:45:52 .....          325          325  Web\images_general\toD1.png
+2026-02-05 07:45:52 .....          568          568  Web\images_general\unbind.png
+2026-02-05 07:45:52 .....          550          550  Web\images_general\unbind_hover.png
+2026-02-05 07:45:52 .....          466          466  Web\images_general\upgradeIcon.png
+2026-02-05 07:45:52 .....          859          859  Web\images_general\user.png
+2026-02-05 07:45:52 .....          459          459  Web\images_general\Live\AlarmAudio.png
+2026-02-05 07:45:52 .....        61112        61112  Web\images_general\Live\Elect.png
+2026-02-05 07:45:52 .....         2471         2471  Web\images_general\Live\chn.png
+2026-02-05 07:45:52 .....          247          247  Web\images_general\Live\down.png
+2026-02-05 07:45:52 .....         4452         4452  Web\images_general\Live\liveTop.png
+2026-02-05 07:45:52 .....         5120         5120  Web\images_general\Live\previewIcon.png
+2026-02-05 07:45:52 .....                     23620  Web\images_general\Live\ptz.png
+2026-02-05 07:45:52 .....                      3239  Web\images_general\Live\ptzctrl.png
+2026-02-05 07:45:52 .....                      1607  Web\images_general\Live\sliderBar.png
+2026-02-05 07:45:52 .....          104          104  Web\images_general\Live\sliderBg.png
+2026-02-05 07:45:52 .....          104          104  Web\images_general\Live\sliderBg1.png
+2026-02-05 07:45:52 .....         1005         1005  Web\images_general\Live\talk.png
+2026-02-05 07:45:52 .....                      2654  Web\images_general\Live\wndMode.png
+2026-08-27 02:57:22 .....                     23599  Web\lg\Arabic.xml
+2026-08-27 02:57:22 .....                     23128  Web\lg\Brazilian.xml
+2026-08-27 02:57:22 .....                     25211  Web\lg\Bulgarian.xml
+2026-08-27 02:57:22 .....                     23757  Web\lg\Czech.xml
+2026-08-27 02:57:22 .....                     22595  Web\lg\Dansk.xml
+2026-08-27 02:57:22 .....                     21246  Web\lg\English.xml
+2026-08-27 02:57:22 .....                     22361  Web\lg\Estonian.xml
+2026-08-27 02:57:22 .....                     23593  Web\lg\Farsi.xml
+2026-08-27 02:57:22 .....                     23071  Web\lg\Finnish.xml
+2026-08-27 02:57:22 .....                     23365  Web\lg\French.xml
+2026-08-27 02:57:22 .....                     23224  Web\lg\German.xml
+2026-08-27 02:57:22 .....                     26004  Web\lg\Greek.xml
+2026-08-27 02:57:22 .....                     23567  Web\lg\Hebrew.xml
+2026-08-27 02:57:22 .....                     23954  Web\lg\Hungarian.xml
+2026-08-27 02:57:22 .....                     22282  Web\lg\Indonesian.xml
+2026-08-27 02:57:22 .....                     23812  Web\lg\Italian.xml
+2026-08-27 02:57:22 .....                     23618  Web\lg\Japanese.xml
+2026-08-27 02:57:22 .....                     21639  Web\lg\Korean.xml
+2026-08-27 02:57:22 .....                     23864  Web\lg\Poland.xml
+2026-08-27 02:57:22 .....                     23097  Web\lg\Portugal.xml
+2026-08-27 02:57:22 .....                     23281  Web\lg\Romanian.xml
+2026-08-27 02:57:22 .....                     24777  Web\lg\Russian.xml
+2026-08-27 02:57:22 .....                     21660  Web\lg\SimpChinese.xml
+2026-08-27 02:57:22 .....                     23079  Web\lg\Spanish.xml
+2026-08-27 02:57:22 .....                     22728  Web\lg\Swedish.xml
+2026-08-27 02:57:22 .....                     24357  Web\lg\Thai.xml
+2026-08-27 02:57:22 .....                     22122  Web\lg\TradChinese.xml
+2026-08-27 02:57:22 .....                     23268  Web\lg\Turkey.xml
+2026-08-27 02:57:22 .....                     24959  Web\lg\Ukrainian.xml
+2026-08-27 02:57:22 .....                     23369  Web\lg\Vietnamese.xml
+2026-03-13 03:44:06 .....                      9962  Web\plugin\RSUI.js
+2026-08-27 02:57:22 .....                     26878  Web\plugin\class.js
+2026-06-06 09:16:38 .....                      9138  Web\plugin\common.js
+2026-03-13 03:44:06 .....                       258  Web\plugin\extend.js
+2026-08-27 02:57:22 .....                     27681  Web\plugin\function.js
+2026-02-05 07:45:54 .....                     11650  Web\plugin\jquery.form.js
+2026-02-05 07:45:54 .....                      4418  Web\plugin\jquery.qrcode.min.js
+2026-08-27 02:57:22 .....                     12771  Web\plugin\language.js
+2026-02-05 07:45:54 .....                      4473  Web\plugin\schedule.js
+                    .....                      1401  $PLUGINSDIR\nsProcess.dll
+                    .....                      8443  uninst.exe
+------------------- ----- ------------ ------------  ------------------------
+2026-09-15 09:04:40             108402     47054927  471 files

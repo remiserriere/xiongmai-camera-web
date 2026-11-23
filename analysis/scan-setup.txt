@@ -1,0 +1,31 @@
+PE32+: false sections: 5
+  section .text vsize=25617 rawsize=26112 rawptr=1024
+  section .rdata vsize=5016 rawsize=5120 rawptr=27136
+  section .data vsize=131896 rawsize=1536 rawptr=32256
+  section .ndata vsize=73728 rawsize=0 rawptr=0
+  section .rsrc vsize=19832 rawsize=19968 rawptr=33792
+end of sections: 53760 file size: 47126299 overlay bytes: 47072539
+sig NSIS: 53768,47120444
+sig Inno: none
+sig InnoLdr: none
+sig 7z: none
+sig ZIP: none
+sig MSI_CFB: none
+sig CAB: none
+sig WiXBurn: none
+sig MZ_embedded: 78
+--- interesting strings (14) ---
+1x ADVAPI32.dll
+1x SHELL32.dll
+1x ole32.dll
+1x COMCTL32.dll
+1x USER32.dll
+1x GDI32.dll
+1x KERNEL32.dll
+1x <?xml version="1.0" encoding="UTF-8" standalone="yes"?><assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0"><assemblyIdentity version="1.0.0.0" processorArchitecture="*" name="Nullsoft.NSIS.exehead" t
+1x NullsoftInstN
+1x omQt5k
+1x NullsoftInst,
+1x [u16] Software\Microsoft\Windows\CurrentVersion
+1x [u16] http://nsis.sf.net/NSIS_Error
+1x [u16] %s%S.dll
