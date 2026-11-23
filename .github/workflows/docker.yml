@@ -16,6 +16,9 @@ jobs:
     permissions:
       contents: read
       packages: write
+    defaults:
+      run:
+        shell: bash
     steps:
       - name: Check out source
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -57,7 +60,8 @@ jobs:
           docker run --detach --name camera-web-smoke \
             --publish 127.0.0.1:8080:8080 "$IMAGE"
           trap 'docker logs camera-web-smoke; docker rm --force camera-web-smoke' EXIT
-          curl --fail --silent --show-error --retry 15 --retry-connrefused \
+          curl --fail --silent --show-error --retry 15 --retry-all-errors \
+            --connect-timeout 2 --max-time 5 --retry-max-time 45 \
             --retry-delay 1 http://127.0.0.1:8080/api/status \
             | jq --exit-status '.ok == true and .connected == false'
 
