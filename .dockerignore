@@ -1,0 +1,10 @@
+**
+!Dockerfile
+!.dockerignore
+!package.json
+!package-lock.json
+!server.js
+!lib/
+!lib/**
+!public/
+!public/**

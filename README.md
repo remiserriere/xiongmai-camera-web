@@ -21,6 +21,47 @@ npm start
 
 Ouvrir http://127.0.0.1:8080, onglet Connexion. Variables d'environnement facultatives : `PORT` (8080), `HOST` (127.0.0.1).
 
+## Docker
+
+Image Linux `amd64` publiée sur GitHub Container Registry :
+`ghcr.io/remiserriere/xiongmai-camera-web`.
+
+- Chaque push sur `main` publie `main-<hash court du commit>` (7 caractères).
+- Chaque tag Git poussé publie une image portant ce tag, par exemple `v1.2.3`.
+  Les caractères incompatibles avec les tags Docker sont normalisés par
+  `docker/metadata-action`. Aucun tag `latest` n'est créé automatiquement.
+- Le workflow [Docker image](.github/workflows/docker.yml) construit l'image,
+  vérifie FFmpeg et le démarrage HTTP sans caméra, puis publie avec le
+  `GITHUB_TOKEN` fourni par GitHub Actions : aucun secret supplémentaire requis.
+
+Exemple pour une version publiée :
+
+```powershell
+docker run --rm --name xiongmai-camera-web -p 127.0.0.1:8080:8080 ghcr.io/remiserriere/xiongmai-camera-web:v1.2.3
+```
+
+Remplacer `v1.2.3` par un tag réellement publié, puis ouvrir
+http://127.0.0.1:8080. Si GHCR demande une authentification, rendre le package
+public dans ses paramètres GitHub ou utiliser `docker login ghcr.io`.
+
+Pour construire localement :
+
+```powershell
+docker build -t xiongmai-camera-web:local .
+docker run --rm --name xiongmai-camera-web -p 127.0.0.1:8080:8080 xiongmai-camera-web:local
+```
+
+L'image utilise Node.js 24 et un utilisateur non-root. `HOST=0.0.0.0` permet
+l'accès au service **dans le conteneur** ; conserver le mapping sur
+`127.0.0.1` côté hôte, sans `--network host`. Les risques résiduels décrits
+dans la section Sécurité restent applicables. L'adresse réseau de la caméra
+doit être joignable depuis le conteneur.
+
+Le contexte Docker est une liste autorisée de sources : aucun historique Git,
+identifiant local, export caméra, fichier d'analyse ou installateur constructeur
+n'est inclus. Les identifiants saisis restent en mémoire et sont perdus à
+l'arrêt du conteneur ; aucun volume n'est nécessaire.
+
 ## Langues
 
 L'interface et les messages du serveur sont disponibles en français et en anglais (sélecteur en haut à droite ; par défaut, la langue du navigateur). Les textes sont dans `public/i18n.js` (interface) et `lib/messages.js` (serveur).
@@ -47,7 +88,7 @@ node tools/build-param-help.js
 
 ## Sécurité
 
-- Par défaut, le serveur écoute sur 127.0.0.1 et refuse les requêtes HTTP dont l'en-tête Host n'est pas autorisé (protection partielle contre le DNS rebinding). Ne pas élargir l'écoute avec `HOST`.
+- Hors conteneur, le serveur écoute par défaut sur 127.0.0.1 ; ne pas élargir l'écoute avec `HOST`. Dans Docker, limiter le port publié à `127.0.0.1` comme indiqué ci-dessus. Le serveur refuse les requêtes HTTP dont l'en-tête Host n'est pas autorisé (protection partielle contre le DNS rebinding).
 - Ne pas exposer ce service sur Internet.
 - Définir un mot de passe administrateur sur la caméra (Système > Compte).
 - Le WebSocket vidéo ne vérifie pas l'origine du navigateur : un site tiers peut

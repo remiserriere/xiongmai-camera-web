@@ -21,6 +21,47 @@ npm start
 
 Open http://127.0.0.1:8080, Connection tab. Optional environment variables: `PORT` (8080), `HOST` (127.0.0.1).
 
+## Docker
+
+Linux `amd64` image published to GitHub Container Registry:
+`ghcr.io/remiserriere/xiongmai-camera-web`.
+
+- Every push to `main` publishes `main-<short commit hash>` (7 characters).
+- Every pushed Git tag publishes an image with that tag, for example `v1.2.3`.
+  Characters unsupported in Docker tags are normalized by
+  `docker/metadata-action`. No `latest` tag is created automatically.
+- The [Docker image workflow](.github/workflows/docker.yml) builds the image,
+  checks FFmpeg and HTTP startup without a camera, then publishes using the
+  GitHub Actions `GITHUB_TOKEN`: no additional secret is required.
+
+Example for a published version:
+
+```powershell
+docker run --rm --name xiongmai-camera-web -p 127.0.0.1:8080:8080 ghcr.io/remiserriere/xiongmai-camera-web:v1.2.3
+```
+
+Replace `v1.2.3` with an existing published tag, then open
+http://127.0.0.1:8080. If GHCR requires authentication, make the package public
+in its GitHub settings or use `docker login ghcr.io`.
+
+To build locally:
+
+```powershell
+docker build -t xiongmai-camera-web:local .
+docker run --rm --name xiongmai-camera-web -p 127.0.0.1:8080:8080 xiongmai-camera-web:local
+```
+
+The image uses Node.js 24 and a non-root user. `HOST=0.0.0.0` makes the service
+reachable **inside the container**; keep the host port mapping bound to
+`127.0.0.1`, without `--network host`. The residual risks in the Security
+section still apply. The camera's network address must be reachable from the
+container.
+
+The Docker context allowlists application sources: it does not include Git
+history, local credentials, camera exports, analysis files or vendor installers.
+Entered credentials remain in memory and are lost when the container stops;
+no volume is required.
+
 ## Languages
 
 The interface and server messages are available in French and English (selector at the top right; defaults to the browser language). Strings live in `public/i18n.js` (interface) and `lib/messages.js` (server).
@@ -47,7 +88,7 @@ node tools/build-param-help.js
 
 ## Security
 
-- By default, the server listens on 127.0.0.1 and rejects HTTP requests whose Host header is not allowed (partial DNS rebinding protection). Do not broaden the listener using `HOST`.
+- Outside a container, the server defaults to 127.0.0.1; do not broaden the listener using `HOST`. In Docker, bind the published port to `127.0.0.1` as shown above. The server rejects HTTP requests whose Host header is not allowed (partial DNS rebinding protection).
 - Do not expose this service to the Internet.
 - Set an administrator password on the camera (System > Account).
 - The video WebSocket does not check the browser's origin: a third-party site can
