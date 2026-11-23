@@ -76,7 +76,7 @@ ou mises à jour, indépendamment du logiciel utilisé sur le PC. Le serveur
 caméra ; ce n'est pas une preuve d'appel direct du plugin sur le PC.
 
 Le bouton de vérification en ligne du remplacement n'est pas un mode hors ligne :
-[server.js](server.js), ligne 209, envoie une commande `cldupgrade` à la caméra,
+[server.js](server.js), ligne 220, envoie une commande `cldupgrade` à la caméra,
 avec son numéro de série dans `UUID`. Cette action peut lui faire contacter son
 service de mise à jour. L'application ne désactive pas automatiquement ses
 fonctions réseau.
@@ -141,7 +141,7 @@ sans vérification supplémentaire.
 | Exécution du plugin | Aucun besoin de lancer VideoPlayTool, son gestionnaire de protocole ou ses SDK propriétaires pour l'utilisation normale. | Ne désinstalle ni n'arrête une ancienne installation déjà présente. |
 | Cloud du SDK constructeur | Connexion directe à l'adresse choisie via CGI et RTSP, sans reprendre les fonctions de compte cloud/P2P du SDK. | N'empêche pas la caméra de contacter Internet. |
 | Ressources de l'interface | Interface, lecteur et données d'aide servis depuis les fichiers locaux, sans reprise du chargement distant de scripts constructeur. | L'installation npm et les mises à jour des dépendances restent une chaîne de confiance distincte. |
-| Exposition HTTP | Écoute en boucle locale par défaut et filtre `Host` pour les requêtes HTTP. | Ce n'est pas une authentification ; `HOST` peut élargir l'écoute, et le WebSocket reste un problème distinct. |
+| Exposition HTTP | Écoute en boucle locale par défaut hors conteneur et filtre `Host` pour les requêtes HTTP. `ALLOWED_HOSTS` permet une liste explicite supplémentaire pour un Ingress ou NodePort, sans joker ni confiance dans `X-Forwarded-Host`. | Ce n'est pas une authentification ; `HOST` peut élargir l'écoute. En conteneur, restreindre le port publié ou l'accès réseau. Le WebSocket reste un problème distinct. |
 | Identifiants | Session conservée en mémoire du serveur, sans fichier de configuration automatique. | Mémoire et processus locaux ne sont pas un coffre-fort ; exports et diagnostics peuvent contenir des secrets. Les URL RTSP contiennent les identifiants et sont utilisées par FFmpeg. |
 | Auditabilité | Code applicatif lisible et périmètre fonctionnel réduit. | Node, les paquets npm, FFmpeg et le lecteur restent des composants à maintenir. FFmpeg demeure un décodeur natif exposé au flux caméra. |
 
@@ -155,7 +155,7 @@ tableau. Ils ne constituent pas un score CVSS.
 
 | # | Severity | File | Lines | Vulnerability | Confidence |
 |---|----------|------|-------|---------------|------------|
-| 1 | 🟠 HIGH | [server.js](server.js) | 110 | Flux WebSocket local sans contrôle explicite de l'origine ni jeton d'accès | 9/10 |
+| 1 | 🟠 HIGH | [server.js](server.js) | 121 | Flux WebSocket local sans contrôle explicite de l'origine ni jeton d'accès | 9/10 |
 | 2 | 🟠 HIGH | [xm-cgi.js](lib/xm-cgi.js) | 57 | Échanges caméra sur HTTP sans authentification du serveur | 9/10 |
 
 ### 1. Site tiers vers WebSocket local
@@ -177,7 +177,7 @@ L'URL de base du client est HTTP. La clé RSA, le sel et le mode de chiffrement
 annoncés sont reçus sur ce transport non authentifié. Le chiffrement applicatif
 ne garantit donc pas l'identité de la caméra face à un attaquant actif sur le
 trajet. Le changement de mot de passe transmet notamment l'ancien et le nouveau
-secret dans le protocole applicatif : voir [server.js](server.js), ligne 167.
+secret dans le protocole applicatif : voir [server.js](server.js), ligne 178.
 Le flux RTSP n'utilise pas non plus un transport TLS.
 
 Correction souhaitable : transport authentifié si le matériel et le protocole

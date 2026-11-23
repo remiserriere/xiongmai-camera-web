@@ -11,8 +11,19 @@ const host = process.env.HOST || "127.0.0.1";
 
 const app = express();
 
-// Blocks DNS-rebinding: only accept requests addressed to this machine's local names.
+// Explicit authorities preserve Host filtering behind a reverse proxy or NodePort.
 const allowedHosts = new Set([`127.0.0.1:${port}`, `localhost:${port}`, `[::1]:${port}`, `${host}:${port}`]);
+for (const value of (process.env.ALLOWED_HOSTS || "").split(",")) {
+  const entry = value.trim().toLowerCase();
+  if (!entry) continue;
+  try {
+    if (!/^(?:[a-z0-9.-]+|\[[a-f0-9:.]+\])(?::\d{1,5})?$/.test(entry)) throw new Error();
+    new URL(`http://${entry}`);
+  } catch {
+    throw new Error("Invalid ALLOWED_HOSTS: use comma-separated hosts with optional ports, without schemes, paths or wildcards.");
+  }
+  allowedHosts.add(entry);
+}
 app.use((req, res, next) => {
   if (!allowedHosts.has(String(req.headers.host || "").toLowerCase())) {
     res.status(403).send(tr(langOf(req), "forbiddenHost"));

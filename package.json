@@ -4,7 +4,8 @@
   "description": "Plugin-free local web app for IP camera preview and PTZ control",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "node --test test/allowed-hosts.test.js"
   },
   "dependencies": {
     "express": "^4.21.1",

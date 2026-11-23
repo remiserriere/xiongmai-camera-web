@@ -20,6 +20,8 @@ npm start
 ```
 
 Ouvrir http://127.0.0.1:8080, onglet Connexion. Variables d'environnement facultatives : `PORT` (8080), `HOST` (127.0.0.1).
+`HOST` définit l'adresse d'écoute ; `ALLOWED_HOSTS` ajoute les hôtes HTTP autorisés
+(voir la section K3s ci-dessous).
 
 ## Docker
 
@@ -61,6 +63,48 @@ Le contexte Docker est une liste autorisée de sources : aucun historique Git,
 identifiant local, export caméra, fichier d'analyse ou installateur constructeur
 n'est inclus. Les identifiants saisis restent en mémoire et sont perdus à
 l'arrêt du conteneur ; aucun volume n'est nécessaire.
+
+### K3s / Kubernetes / reverse proxy
+
+Une erreur `Forbidden host` signifie que l'en-tête HTTP `Host` reçu ne fait pas
+partie des adresses autorisées. `HOST=0.0.0.0` ne désactive pas ce contrôle :
+utiliser `ALLOWED_HOSTS` pour ajouter les noms ou adresses réellement utilisés.
+Extrait de la configuration du conteneur dans un Deployment :
+
+```yaml
+env:
+  - name: HOST
+    value: "0.0.0.0"
+  - name: ALLOWED_HOSTS
+    value: "camera.example.test,192.0.2.10:30080"
+```
+
+Remplacer ces exemples par le nom de l'Ingress et/ou l'adresse du nœud et son
+NodePort. La liste est séparée par des virgules, insensible à la casse, et
+s'ajoute aux hôtes locaux par défaut. Chaque entrée correspond exactement à
+`Host`, port compris lorsqu'il est présent : ajouter `camera.example.test:8443`
+si cette valeur est utilisée. Ne pas mettre `http://`, `https://`, de chemin
+ou de joker `*` ; une configuration invalide bloque le démarrage.
+
+Le proxy doit conserver l'en-tête `Host` attendu. `X-Forwarded-Host` n'est pas
+utilisé pour décider des autorisations. Pour une sonde HTTP Kubernetes vers
+l'IP dynamique d'un Pod, définir explicitement un hôte autorisé :
+
+```yaml
+readinessProbe:
+  httpGet:
+    path: /api/status
+    port: 8080
+    httpHeaders:
+      - name: Host
+        value: "localhost:8080"
+```
+
+Adapter aussi les éventuelles sondes de démarrage et de vivacité. Ce réglage
+ne fournit aucune authentification : garder l'accès sur un réseau privé/VPN,
+limiter les clients autorisés et ne pas exposer l'application sur Internet.
+Les sessions sont en mémoire : utiliser une seule réplique, sauf gestion
+explicite de l'affinité et des sessions.
 
 ## Langues
 

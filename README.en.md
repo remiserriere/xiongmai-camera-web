@@ -20,6 +20,8 @@ npm start
 ```
 
 Open http://127.0.0.1:8080, Connection tab. Optional environment variables: `PORT` (8080), `HOST` (127.0.0.1).
+`HOST` controls the listening address; `ALLOWED_HOSTS` adds allowed HTTP hosts
+(see the K3s section below).
 
 ## Docker
 
@@ -61,6 +63,47 @@ The Docker context allowlists application sources: it does not include Git
 history, local credentials, camera exports, analysis files or vendor installers.
 Entered credentials remain in memory and are lost when the container stops;
 no volume is required.
+
+### K3s / Kubernetes / reverse proxy
+
+A `Forbidden host` error means that the received HTTP `Host` header is not in
+the allowlist. `HOST=0.0.0.0` does not disable this check: use `ALLOWED_HOSTS` to
+add the names or addresses actually used. Container configuration excerpt
+inside a Deployment:
+
+```yaml
+env:
+  - name: HOST
+    value: "0.0.0.0"
+  - name: ALLOWED_HOSTS
+    value: "camera.example.test,192.0.2.10:30080"
+```
+
+Replace these examples with your Ingress hostname and/or node address and
+NodePort. Entries are comma-separated, case-insensitive, and added to the
+default local hosts. Each entry matches `Host` exactly, including its port
+when present: add `camera.example.test:8443` if that value is used. Do not
+include `http://`, `https://`, paths or the `*` wildcard; invalid
+configuration prevents startup.
+
+The proxy must preserve the expected `Host` header. `X-Forwarded-Host` is not
+used for authorization. For a Kubernetes HTTP probe targeting a dynamic Pod
+IP, set an explicitly allowed host:
+
+```yaml
+readinessProbe:
+  httpGet:
+    path: /api/status
+    port: 8080
+    httpHeaders:
+      - name: Host
+        value: "localhost:8080"
+```
+
+Adapt any startup and liveness probes too. This setting is not authentication:
+keep access on a private network/VPN, restrict allowed clients, and do not
+expose the application to the Internet. Sessions are held in memory: use a
+single replica unless affinity and sessions are explicitly managed.
 
 ## Languages
 

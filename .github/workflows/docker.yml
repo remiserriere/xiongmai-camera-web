@@ -58,12 +58,20 @@ jobs:
             execFileSync(require("ffmpeg-static"), ["-version"], { stdio: "inherit" });
           '
           docker run --detach --name camera-web-smoke \
+            --env ALLOWED_HOSTS=camera.example.test \
             --publish 127.0.0.1:8080:8080 "$IMAGE"
           trap 'docker logs camera-web-smoke; docker rm --force camera-web-smoke' EXIT
           curl --fail --silent --show-error --retry 15 --retry-all-errors \
             --connect-timeout 2 --max-time 5 --retry-max-time 45 \
             --retry-delay 1 http://127.0.0.1:8080/api/status \
             | jq --exit-status '.ok == true and .connected == false'
+          curl --fail --silent --show-error --header 'Host: camera.example.test' \
+            http://127.0.0.1:8080/api/status \
+            | jq --exit-status '.ok == true and .connected == false'
+          status=$(curl --silent --show-error --output /dev/null --write-out '%{http_code}' \
+            --header 'Host: other.example.test' http://127.0.0.1:8080/api/status)
+          echo "Unlisted host HTTP status: $status"
+          test "$status" = 403
 
       - name: Log in to GitHub Container Registry
         uses: docker/login-action@8aa5831fb8d48d8f76594c7ddde61ae58019f550 # v4.8.0
